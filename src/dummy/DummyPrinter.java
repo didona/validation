@@ -3,6 +3,7 @@ package dummy;
 import common.Ispn5_2BasicValidationPrinter;
 import validations.ValidatedScenario;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -11,8 +12,8 @@ import java.util.List;
  */
 public class DummyPrinter extends Ispn5_2BasicValidationPrinter {
 
-   public DummyPrinter(String testPath, String output, List<ValidatedScenario> validatedScenarios) {
-      super(testPath, output, validatedScenarios);
+   public DummyPrinter(String outpath, LinkedList<ValidatedScenario> validatedScenarios) {
+      super(outpath, validatedScenarios);
    }
 
    @Override
@@ -23,7 +24,7 @@ public class DummyPrinter extends Ispn5_2BasicValidationPrinter {
    }
 
    @Override
-   protected String line(ValidatedScenario validatedScenario) {
-      return printBasicStats(validatedScenario);
+   protected void line(ValidatedScenario validatedScenario) {
+      printBasicStats(validatedScenario);
    }
 }

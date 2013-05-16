@@ -21,18 +21,18 @@ public class Main {
 
    private final static Log log = LogFactory.getLog(Main.class);
 
-   public static void main(String[] args) throws IOException {
+   public static void main(String[] args) throws Exception {
       ValidationConfiguration conf = (ValidationConfiguration) new DXmlParser().parse("conf/conf.xml");
       GlobalValidationConfig globalValidationConfig = conf.getGlobalValidationConfig();
       FactoriesConfig factoriesConfig = conf.getFactoriesConfig();
       //Util.init(8);
       String testPath = globalValidationConfig.getTestPath();
       log.trace("Test path is " + testPath);
-      String outName = globalValidationConfig.getOutput() + ".csv";
+      String outPath = globalValidationConfig.getOutput() + ".csv";
       GlobalValidator gv = new GlobalValidator(globalValidationConfig, factoriesConfig);
       gv.validateAll();
       log.trace("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n Validation Ended\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-      ValidationPrinter vp = PrinterFactory.buildPrinter(factoriesConfig, testPath, outName, gv);
+      ValidationPrinter vp = PrinterFactory.buildPrinter(factoriesConfig, gv.getValidatedScenarios(), outPath);
       vp.printValidation();
       System.exit(1);
    }

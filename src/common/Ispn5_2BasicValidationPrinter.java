@@ -13,8 +13,8 @@ import java.util.List;
 public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter {
 
 
-   protected Ispn5_2BasicValidationPrinter(String testPath, String output, List<ValidatedScenario> validatedScenarios) {
-      super(testPath, output, validatedScenarios);
+   public Ispn5_2BasicValidationPrinter(String outpath, List<ValidatedScenario> validatedScenarios) {
+      super(outpath, validatedScenarios);
    }
 
    protected final void basicHeader(StringBuilder sb) {

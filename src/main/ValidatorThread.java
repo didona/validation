@@ -1,11 +1,13 @@
 package main;
 
+import common.Validator;
 import config.FactoriesConfig;
 import config.GlobalValidationConfig;
 import factories.ValidatorFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import parse.RadargunCsvParser;
+import parser.Ispn5_2CsvParser;
 import validations.ValidatedScenario;
 
 import java.io.File;
@@ -30,19 +32,23 @@ public class ValidatorThread extends Thread {
       this.csvFolderList = l;
       this.validatedScenariosList = ll;
       this.factoriesConfig = fac;
+      this.globalValidationConfig = globalValidationConfig;
    }
 
    public void run() {
 
       File folder;
       while ((folder = dequeue(this.csvFolderList)) != null) {
+
          for (File csv : folder.listFiles()) {
             if (!GlobalValidator.csv(csv))
                continue;
-            if (!processFile(csv))
-               continue;
+            //if (!processFile(csv))
+              // continue;
+            System.out.println(csv);
             try {
-               RadargunCsvParser parser = new RadargunCsvParser(csv.getPath());
+               //TODO: this is generic in the ValidationResult. This means that every Printer and Validator has to be related to a kind of parser
+               RadargunCsvParser parser = new Ispn5_2CsvParser(csv.getPath());
                Validator v = ValidatorFactory.buildValidator(factoriesConfig);
                log.trace("Validating " + csv.getPath());
                v.validate(parser);

@@ -27,10 +27,9 @@ public abstract class ValidationPrinter {
 
    private StringBuilder sb = new StringBuilder();
 
-   public ValidationPrinter(String testPath, String output, List<ValidatedScenario> validatedScenarios) {
-      String outputt = testPath + output;
+   public ValidationPrinter(String outpath, List<ValidatedScenario> validatedScenarios) {
       try {
-         this.fw = new FileWriter(new File(outputt));
+         this.fw = new FileWriter(new File(outpath));
       } catch (IOException e) {
          e.printStackTrace();
          System.exit(-1);
@@ -38,10 +37,12 @@ public abstract class ValidationPrinter {
       this.validatedScenarios = validatedScenarios;
    }
 
+
    public final void printValidation() {
       this.writeAndCarry(header());
       for (ValidatedScenario v : validatedScenarios) {
-         this.writeAndCarry(line(v));
+         this.writeAndCarry(_line(v));
+         this.flush();
       }
       this.close();
    }
@@ -102,5 +103,11 @@ public abstract class ValidationPrinter {
 
    protected abstract String header();
 
-   protected abstract String line(ValidatedScenario vs);
+   protected abstract void line(ValidatedScenario vs);
+
+
+   private String _line(ValidatedScenario vs){
+      line(vs);
+      return sb.toString();
+   }
 }

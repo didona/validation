@@ -72,7 +72,7 @@ public class GlobalValidator {
    }
 
    public static boolean csv(File f) {
-      return f.getAbsolutePath().endsWith(".csv") && f.getName().contains("PC");
+      return f.getAbsolutePath().endsWith(".csv");
    }
 
    public List<ValidatedScenario> getValidatedScenarios() {

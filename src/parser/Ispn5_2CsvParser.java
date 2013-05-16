@@ -25,13 +25,13 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
 
    public double writeThroughput() {
       double time = getTestSecDuration();
-      double writes = getSumParam("NUM_WRITES");
+      double writes = getSumParam("READ_COUNT");
       return writes / time;
    }
 
    public double readThroughput() {
       double time = getTestSecDuration();
-      double reads = getSumParam("NUM_READS");
+      double reads = getSumParam("WRITE_COUNT");
       return reads / time;
    }
 
