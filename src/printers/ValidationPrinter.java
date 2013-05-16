@@ -25,6 +25,8 @@ public abstract class ValidationPrinter {
    private final static DecimalFormat dcf = new DecimalFormat("###,###.########");
    private final static Log log = LogFactory.getLog(ValidationPrinter.class);
 
+   private StringBuilder sb = new StringBuilder();
+
    public ValidationPrinter(String testPath, String output, List<ValidatedScenario> validatedScenarios) {
       String outputt = testPath + output;
       try {
@@ -64,6 +66,19 @@ public abstract class ValidationPrinter {
          System.exit(-1);
       }
 
+   }
+
+
+   private void flush(){
+      sb = new StringBuilder();
+   }
+
+   protected final void put(String s){
+      appendAndSep(sb,s);
+   }
+
+   protected final void put(double d){
+      appendAndSep(sb,d);
    }
 
    protected final void appendAndSep(StringBuilder sb, String s) {
