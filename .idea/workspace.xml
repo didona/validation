@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89d78c8c-03fd-4ccf-af32-090912bb95bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/AbstractValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/validators/DummyValidatorConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Validator.java" afterPath="$PROJECT_DIR$/src/common/Validator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rgParser.jar" afterPath="$PROJECT_DIR$/lib/rgParser.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dummy/DummyPrinter.java" afterPath="$PROJECT_DIR$/src/dummy/DummyPrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dummy/DummyValidator.java" afterPath="$PROJECT_DIR$/src/dummy/DummyValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/FactoriesConfig.java" afterPath="$PROJECT_DIR$/src/config/FactoriesConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/GlobalValidator.java" afterPath="$PROJECT_DIR$/src/main/GlobalValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" afterPath="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" afterPath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/factories/PrinterFactory.java" afterPath="$PROJECT_DIR$/src/factories/PrinterFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validations/ValidatedScenario.java" afterPath="$PROJECT_DIR$/src/validations/ValidatedScenario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/printers/ValidationPrinter.java" afterPath="$PROJECT_DIR$/src/printers/ValidationPrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/factories/ValidatorFactory.java" afterPath="$PROJECT_DIR$/src/factories/ValidatorFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ValidatorThread.java" afterPath="$PROJECT_DIR$/src/main/ValidatorThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="89d78c8c-03fd-4ccf-af32-090912bb95bb" name="Default" comment="" />
     <ignored path="Validation.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368730007420" ignored="false" />
@@ -38,7 +20,7 @@
     <file path="/XmlParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368712412192" ignored="false" />
     <file path="$PROJECT_DIR$/../SimpleXmlParser/src/configuration/test/ConfigBuilderTest.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368712416656" ignored="false" />
     <file path="$PROJECT_DIR$/../SimpleXmlParser/src/configuration/xml/DXmlParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368712416656" ignored="false" />
-    <file path="$PROJECT_DIR$/../csvParser/src/parse/StatisticsContainer.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368729629299" ignored="false" />
+    <file path="$PROJECT_DIR$/../csvParser/src/parse/StatisticsContainer.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368730641175" ignored="false" />
     <file path="$PROJECT_DIR$/../csvParser/src/parse/CsvParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368713583379" ignored="false" />
     <file path="$PROJECT_DIR$/../csvParser/src/parse/RadargunCsvParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368729826625" ignored="false" />
     <file path="$PROJECT_DIR$/../csvParser/src/parse/Translation.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368713589110" ignored="false" />

@@ -1,0 +1,2 @@
+Numkeys;NumWrites;NumThread;NumNodes;Warehouses;Parallelism;Throughput;WriteThroughput;ReadThroughput;
+100.000;-1;2;40;0;80;149,0466293;14,17272018;134,87390913;

@@ -1,0 +1,19 @@
+<config.ValidationConfiguration>
+   	   <config.GlobalValidationConfig
+            numThreads="1"
+            testPath="data/"
+            output="data/dummy"
+            minThreads="1"
+            maxThreads="16"
+            minNodes="2"
+            maxNodes="40"
+            minWrites="1"
+            maxWrites="13"
+            minReads="1"
+            maxReads="5343000"
+            minWarehouses="17"
+            maxWarehouses="17"/>
+    <config.FactoriesConfig
+        printerClass="dummy.DummyPrinter"
+        validatorConfig="conf/DummyValidator.xml"/>
+</config.ValidationConfiguration>
