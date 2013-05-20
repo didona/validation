@@ -100,12 +100,6 @@ public abstract class ValidationPrinter <T extends RadargunCsvParser>{
          appendAndSep(sb, d);
    }
 
-
-   protected abstract void header();
-
-   protected abstract void line(ValidatedScenario<T> vs);
-
-
    private String _line(ValidatedScenario vs) {
       line(vs);
       String line = sb.toString();
@@ -119,4 +113,9 @@ public abstract class ValidationPrinter <T extends RadargunCsvParser>{
       flush();
       return header;
    }
+
+
+   protected abstract void header();
+
+   protected abstract void line(ValidatedScenario<T> vs);
 }

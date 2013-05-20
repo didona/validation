@@ -1,5 +1,6 @@
 package main;
 
+import common.GlobalValidator;
 import config.FactoriesConfig;
 import config.GlobalValidationConfig;
 import config.ValidationConfiguration;
@@ -8,8 +9,6 @@ import factories.PrinterFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import printers.ValidationPrinter;
-
-import java.io.IOException;
 
 /**
  * // TODO: Document this

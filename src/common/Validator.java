@@ -1,6 +1,5 @@
 package common;
 
-import main.NotValidatedException;
 import parse.RadargunCsvParser;
 import validations.ValidatedScenario;
 

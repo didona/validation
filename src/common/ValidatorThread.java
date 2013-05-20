@@ -1,6 +1,5 @@
-package main;
+package common;
 
-import common.Validator;
 import config.FactoriesConfig;
 import config.GlobalValidationConfig;
 import factories.ValidatorFactory;

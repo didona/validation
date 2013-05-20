@@ -2,7 +2,7 @@ package dummy;
 
 
 import common.AbstractValidator;
-import main.NotValidatedException;
+import common.NotValidatedException;
 import parse.RadargunCsvParser;
 import validations.ValidatedScenario;
 
