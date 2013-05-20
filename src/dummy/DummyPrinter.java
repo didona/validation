@@ -1,10 +1,10 @@
 package dummy;
 
 import common.Ispn5_2BasicValidationPrinter;
+import parser.Ispn5_2CsvParser;
 import validations.ValidatedScenario;
 
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * @author Diego Didona, didona@gsd.inesc-id.pt
@@ -17,14 +17,12 @@ public class DummyPrinter extends Ispn5_2BasicValidationPrinter {
    }
 
    @Override
-   protected String header() {
-      StringBuilder sb = new StringBuilder();
-      super.basicHeader(sb);
-      return sb.toString();
+   protected void header() {
+      basicHeader();
    }
 
    @Override
-   protected void line(ValidatedScenario validatedScenario) {
+   protected void line(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
       printBasicStats(validatedScenario);
    }
 }

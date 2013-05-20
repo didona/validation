@@ -34,6 +34,7 @@ public class Main {
       log.trace("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n Validation Ended\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       ValidationPrinter vp = PrinterFactory.buildPrinter(factoriesConfig, gv.getValidatedScenarios(), outPath);
       vp.printValidation();
+      System.out.println("Output file produced in "+outPath);
       System.exit(1);
    }
 

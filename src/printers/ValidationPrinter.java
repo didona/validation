@@ -1,8 +1,9 @@
 package printers;
 
-import main.GlobalValidator;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import parse.CsvParser;
+import parse.RadargunCsvParser;
 import validations.ValidatedScenario;
 
 import java.io.File;
@@ -17,11 +18,11 @@ import java.util.List;
  * @author diego
  * @since 4.0
  */
-public abstract class ValidationPrinter {
+public abstract class ValidationPrinter <T extends RadargunCsvParser>{
 
    private List<ValidatedScenario> validatedScenarios;
    private FileWriter fw;
-   private String sep = ";";
+   private final String sep = ";";
    private final static DecimalFormat dcf = new DecimalFormat("###,###.########");
    private final static Log log = LogFactory.getLog(ValidationPrinter.class);
 
@@ -39,10 +40,9 @@ public abstract class ValidationPrinter {
 
 
    public final void printValidation() {
-      this.writeAndCarry(header());
+      this.writeAndCarry(_header());
       for (ValidatedScenario v : validatedScenarios) {
          this.writeAndCarry(_line(v));
-         this.flush();
       }
       this.close();
    }
@@ -70,16 +70,16 @@ public abstract class ValidationPrinter {
    }
 
 
-   private void flush(){
+   private void flush() {
       sb = new StringBuilder();
    }
 
-   protected final void put(String s){
-      appendAndSep(sb,s);
+   protected final void put(String s) {
+      appendAndSep(sb, s);
    }
 
-   protected final void put(double d){
-      appendAndSep(sb,d);
+   protected final void put(double d) {
+      appendAndSep(sb, d);
    }
 
    protected final void appendAndSep(StringBuilder sb, String s) {
@@ -101,13 +101,22 @@ public abstract class ValidationPrinter {
    }
 
 
-   protected abstract String header();
+   protected abstract void header();
 
-   protected abstract void line(ValidatedScenario vs);
+   protected abstract void line(ValidatedScenario<T> vs);
 
 
-   private String _line(ValidatedScenario vs){
+   private String _line(ValidatedScenario vs) {
       line(vs);
-      return sb.toString();
+      String line = sb.toString();
+      flush();
+      return line;
+   }
+
+   private String _header() {
+      header();
+      String header = sb.toString();
+      flush();
+      return header;
    }
 }
