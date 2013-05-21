@@ -25,13 +25,13 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
 
    public double writeThroughput() {
       double time = getTestSecDuration();
-      double writes = getSumParam("READ_COUNT");
+      double writes = numWriteXact();
       return writes / time;
    }
 
    public double readThroughput() {
       double time = getTestSecDuration();
-      double reads = getSumParam("WRITE_COUNT");
+      double reads = numReadXact();
       return reads / time;
    }
 
@@ -133,9 +133,31 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("NumReadsBeforeWrite");
    }
 
+   public double sizePrepareMsg(){
+      return getAvgParam("AvgPrepareCommandSize") ;
+   }
+
+   public double sizeCommitMsg(){
+       return getAvgParam("AvgCommitCommandSize");
+   }
+   public double sizeRollbackMsg(){
+      return getAvgParam("AvgRollbackCommandSize");
+   }
+   public double sizeRemoteGetMsg(){
+      return getAvgParam("AvgClusteredGetCommandSize");
+   }
+
+   public double sizeRemoteGetReplyMsg(){
+      return getAvgParam("AvgClusteredGetCommandReplySize");
+   }
+
    //TODO: switch to ISPN stats
-   public double numAborts() {
+   public double numRGAborts() {
       return getSumParam("LOCAL_FAILURES") + getSumParam("REMOTE_FAILURES");
+   }
+
+   public double numAborts(){
+      return getSumParam("NumAbortedXacts");
    }
 
    public double numWriteXact(){
@@ -143,12 +165,16 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    }
 
    public double numReadXact(){
-      return -1;
+      return getSumParam("READ_COUNT");
    }
 
    public double numEarlyAborts(){
-      return numWriteXact() - numXactToPrepare();
-      //return getSumParam("LOCAL_FAILURES");
+      return numAborts() - (numLocalPrepareAborts() + numRemotePrepareAborts());
+   }
+
+   public double numLocalPrepareAborts(){
+      double prepareDead = numXactToPrepare() - numWriteXact();
+      return prepareDead - numRemotePrepareAborts();
    }
 
    public double numRemotePrepareAborts(){

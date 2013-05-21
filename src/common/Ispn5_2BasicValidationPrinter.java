@@ -27,6 +27,9 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter <I
       put("Throughput");
       put("WriteThroughput");
       put("ReadThroughput");
+      put("EarlyAborts");
+      put("LocalPrepareAborts");
+      put("RemotePrepareAborts");
       put("WriteXactPercentage");
       put("WriteCommitProbability");
       put("TotalCommitProbability");
@@ -46,6 +49,11 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter <I
       put("RollbackAsyncNet");
       put("RemoteGetRtt");
       put("NumReadsAfterFirstWrite");
+      put("PrepareMessageSize");
+      put("CommitMessageSize");
+      put("RollbackMessageSize");
+      put("RemoteGetMessageSize");
+      put("RemoteGetReplyMessageSize");
    }
 
    protected final void printBasicStats(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
@@ -65,6 +73,9 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter <I
       put(writeT + readT);
       put(writeT);
       put(readT);
+      put(csvParser.numEarlyAborts());
+      put(csvParser.numLocalPrepareAborts());
+      put(csvParser.numRemotePrepareAborts());
       put(csvParser.writePercentageXact());
       put(csvParser.writeXactCommitProbability());
       put(csvParser.commitProbability());
@@ -84,6 +95,11 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter <I
       put(csvParser.netAsyncRollback());
       put(csvParser.remoteGetRtt());
       put(csvParser.numReadsBeforeFirstWrite());
+      put(csvParser.sizePrepareMsg());
+      put(csvParser.sizeCommitMsg());
+      put(csvParser.sizeRollbackMsg());
+      put(csvParser.sizeRemoteGetMsg());
+      put(csvParser.sizeRemoteGetReplyMsg());
    }
 
 }
