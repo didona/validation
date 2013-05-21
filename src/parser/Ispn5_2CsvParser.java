@@ -124,11 +124,40 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    public double putsPerWrXact() {
       return getAvgParam("AvgPutsPerWrTransaction");
    }
-   public double remoteGetRtt(){
+
+   public double remoteGetRtt() {
       return getAvgParam("AvgRemoteGetRtt");
    }
 
    public double numReadsBeforeFirstWrite() {
       return getAvgParam("NumReadsBeforeWrite");
    }
+
+   //TODO: switch to ISPN stats
+   public double numAborts() {
+      return getSumParam("LOCAL_FAILURES") + getSumParam("REMOTE_FAILURES");
+   }
+
+   public double numWriteXact(){
+      return getSumParam("WRITE_COUNT");
+   }
+
+   public double numReadXact(){
+      return -1;
+   }
+
+   public double numEarlyAborts(){
+      return numWriteXact() - numXactToPrepare();
+      //return getSumParam("LOCAL_FAILURES");
+   }
+
+   public double numRemotePrepareAborts(){
+      return getSumParam("RemotelyDeadXact");
+   }
+
+   public double numXactToPrepare(){
+      return getSumParam("UpdateXactToPrepare");
+   }
+
+
 }
