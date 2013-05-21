@@ -207,26 +207,42 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("ReadOnlyTxTotalResponseTime");
    }
 
-   public double businessLogicWrXact() {
-      double remoteGetCost = remoteGetResponseTime();
+   public double businessLogicWrXactR() {
+      double remoteGetCost = localRemoteGetResponseTime();
       double numRemoteRd = remoteReadsPerWrXact();
       double local = localResponseTimeWrXact();
       return local - remoteGetCost * numRemoteRd;
    }
 
-   public double businessLogicROXact() {
-      double remoteGetCost = remoteGetResponseTime();
+   public double businessLogicROXactR() {
+      double remoteGetCost = localRemoteGetResponseTime();
       double numRemoteRd = remoteReadsPerROXact();
       double local = localResponseTimeROXact();
       return local - remoteGetCost * numRemoteRd;
    }
 
-   public double remoteGetResponseTime() {
+   public double businessLogicWrXactS() {
+      double remoteGetCost = localRemoteGetServiceTime();
+      double numRemoteRd = remoteReadsPerWrXact();
+      double local = localServiceTimeWrXact();
+      return local - remoteGetCost * numRemoteRd;
+   }
+
+   public double businessLogicROXactS() {
+      double remoteGetCost = localRemoteGetServiceTime();
+      double numRemoteRd = remoteReadsPerROXact();
+      double local = localServiceTimeROXact();
+      return local - remoteGetCost * numRemoteRd;
+   }
+
+
+
+   public double localRemoteGetResponseTime() {
       return getAvgParam("RemoteGetResponseTime");
    }
 
 
-   public double remoteGetServiceTime() {
+   public double localRemoteGetServiceTime() {
       return getAvgParam("RemoteGetServiceTime");
    }
 
@@ -247,5 +263,12 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("LocalReadOnlyTxLocalServiceTime");
    }
 
+   public double remoteRemoteGetServiceTime(){
+      return getAvgParam("GMUClusteredGetCommandServiceTime");
+   }
+
+   public double remoteRemoteGetResponseTime(){
+      return getAvgParam("GMUClusteredGetCommandResponseTime");
+   }
 
 }

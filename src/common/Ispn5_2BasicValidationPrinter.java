@@ -58,6 +58,12 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       put("RemoteGetWaitTime");
       put("TotalResponseTimeWrXact");
       put("TotalResponseTimeROXact");
+      put("LocalResponseTimeWrXact");
+      put("LocalResponseTimeROXact");
+      put("LocalServiceTimeWrXact");
+      put("LocalServiceTimeROXact");
+      put("BusinessLogicWrXact");
+      put("BusinessLogicROXact");
    }
 
    protected final void printBasicStats(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
@@ -109,6 +115,8 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       put(csvParser.remoteGetWaitTime());
       put(csvParser.totalResponseTimeWrXact());
       put(csvParser.totalResponseTimeROXact());
+      put(csvParser.businessLogicWrXact());
+      put(csvParser.businessLogicROXact());
    }
 
 }
