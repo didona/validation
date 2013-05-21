@@ -2,7 +2,7 @@ package dummy;
 
 import common.Ispn5_2BasicValidationPrinter;
 import parser.Ispn5_2CsvParser;
-import validations.ValidatedScenario;
+import common.ValidatedScenario;
 
 import java.util.LinkedList;
 

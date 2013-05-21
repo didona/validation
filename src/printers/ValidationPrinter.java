@@ -2,9 +2,8 @@ package printers;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import parse.CsvParser;
 import parse.RadargunCsvParser;
-import validations.ValidatedScenario;
+import common.ValidatedScenario;
 
 import java.io.File;
 import java.io.FileWriter;

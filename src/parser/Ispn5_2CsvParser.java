@@ -133,21 +133,23 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("NumReadsBeforeWrite");
    }
 
-   public double sizePrepareMsg(){
-      return getAvgParam("AvgPrepareCommandSize") ;
+   public double sizePrepareMsg() {
+      return getAvgParam("AvgPrepareCommandSize");
    }
 
-   public double sizeCommitMsg(){
-       return getAvgParam("AvgCommitCommandSize");
+   public double sizeCommitMsg() {
+      return getAvgParam("AvgCommitCommandSize");
    }
-   public double sizeRollbackMsg(){
+
+   public double sizeRollbackMsg() {
       return getAvgParam("AvgRollbackCommandSize");
    }
-   public double sizeRemoteGetMsg(){
+
+   public double sizeRemoteGetMsg() {
       return getAvgParam("AvgClusteredGetCommandSize");
    }
 
-   public double sizeRemoteGetReplyMsg(){
+   public double sizeRemoteGetReplyMsg() {
       return getAvgParam("AvgClusteredGetCommandReplySize");
    }
 
@@ -156,33 +158,93 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getSumParam("LOCAL_FAILURES") + getSumParam("REMOTE_FAILURES");
    }
 
-   public double numAborts(){
+   public double numAborts() {
       return getSumParam("NumAbortedXacts");
    }
 
-   public double numWriteXact(){
+   public double numWriteXact() {
       return getSumParam("WRITE_COUNT");
    }
 
-   public double numReadXact(){
+   public double numReadXact() {
       return getSumParam("READ_COUNT");
    }
 
-   public double numEarlyAborts(){
+   public double numEarlyAborts() {
       return numAborts() - (numLocalPrepareAborts() + numRemotePrepareAborts());
    }
 
-   public double numLocalPrepareAborts(){
+   public double numLocalPrepareAborts() {
       double prepareDead = numXactToPrepare() - numWriteXact();
       return prepareDead - numRemotePrepareAborts();
    }
 
-   public double numRemotePrepareAborts(){
+   public double numRemotePrepareAborts() {
       return getSumParam("RemotelyDeadXact");
    }
 
-   public double numXactToPrepare(){
+   public double numXactToPrepare() {
       return getSumParam("UpdateXactToPrepare");
+   }
+
+   public double remoteCommitWaitTime() {
+      return getAvgParam("WaitedTimeInRemoteCommitQueue");
+   }
+
+   public double localCommitWaitTime() {
+      return getAvgParam("WaitedTimeInLocalCommitQueue");
+   }
+
+   public double remoteGetWaitTime() {
+      return getAvgParam("GMUClusteredGetCommandWaitingTime");
+   }
+
+   public double totalResponseTimeWrXact() {
+      return getAvgParam("LocalUpdateTxTotalResponseTime");
+   }
+
+   public double totalResponseTimeROXact() {
+      return getAvgParam("ReadOnlyTxTotalResponseTime");
+   }
+
+   public double businessLogicWrXact() {
+      double remoteGetCost = remoteGetResponseTime();
+      double numRemoteRd = remoteReadsPerWrXact();
+      double local = localResponseTimeWrXact();
+      return local - remoteGetCost * numRemoteRd;
+   }
+
+   public double businessLogicROXact() {
+      double remoteGetCost = remoteGetResponseTime();
+      double numRemoteRd = remoteReadsPerROXact();
+      double local = localResponseTimeROXact();
+      return local - remoteGetCost * numRemoteRd;
+   }
+
+   public double remoteGetResponseTime() {
+      return getAvgParam("RemoteGetResponseTime");
+   }
+
+
+   public double remoteGetServiceTime() {
+      return getAvgParam("RemoteGetServiceTime");
+   }
+
+
+   public double localResponseTimeWrXact() {
+      return getAvgParam("LocalUpdateTxTotalResponseTime");
+   }
+
+   public double localResponseTimeROXact() {
+      return getAvgParam("LocalReadOnlyTxLocalResponseTime");
+   }
+
+   public double localServiceTimeWrXact() {
+      return getAvgParam("LocalUpdateTxTotalServiceTime");
+   }
+
+   public double localServiceTimeROXact() {
+      return getAvgParam("LocalReadOnlyTxLocalServiceTime");
    }
 
 

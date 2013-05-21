@@ -1,7 +1,5 @@
 package common;
 
-import validations.ValidatedScenario;
-
 import java.util.LinkedList;
 import java.util.List;
 

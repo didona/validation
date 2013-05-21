@@ -4,7 +4,7 @@ package dummy;
 import common.AbstractValidator;
 import common.NotValidatedException;
 import parse.RadargunCsvParser;
-import validations.ValidatedScenario;
+import common.ValidatedScenario;
 
 /**
  * @author Diego Didona, didona@gsd.inesc-id.pt

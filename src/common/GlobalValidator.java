@@ -2,7 +2,6 @@ package common;
 
 import config.FactoriesConfig;
 import config.GlobalValidationConfig;
-import validations.ValidatedScenario;
 
 import java.io.File;
 import java.util.LinkedList;

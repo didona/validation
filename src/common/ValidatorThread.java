@@ -7,7 +7,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import parse.RadargunCsvParser;
 import parser.Ispn5_2CsvParser;
-import validations.ValidatedScenario;
 
 import java.io.File;
 import java.io.IOException;

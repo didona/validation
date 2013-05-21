@@ -2,7 +2,6 @@ package common;
 
 import parser.Ispn5_2CsvParser;
 import printers.ValidationPrinter;
-import validations.ValidatedScenario;
 
 import java.util.List;
 
@@ -10,7 +9,7 @@ import java.util.List;
 /**
  * @author Diego Didona, didona@gsd.inesc-id.pt Date: 04/10/12
  */
-public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter <Ispn5_2CsvParser>{
+public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Ispn5_2CsvParser> {
 
 
    public Ispn5_2BasicValidationPrinter(String outpath, List<ValidatedScenario> validatedScenarios) {
@@ -54,6 +53,11 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter <I
       put("RollbackMessageSize");
       put("RemoteGetMessageSize");
       put("RemoteGetReplyMessageSize");
+      put("LocalCommitWaitTime");
+      put("RemoteCommitWaitTime");
+      put("RemoteGetWaitTime");
+      put("TotalResponseTimeWrXact");
+      put("TotalResponseTimeROXact");
    }
 
    protected final void printBasicStats(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
@@ -100,6 +104,11 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter <I
       put(csvParser.sizeRollbackMsg());
       put(csvParser.sizeRemoteGetMsg());
       put(csvParser.sizeRemoteGetReplyMsg());
+      put(csvParser.localCommitWaitTime());
+      put(csvParser.remoteCommitWaitTime());
+      put(csvParser.remoteGetWaitTime());
+      put(csvParser.totalResponseTimeWrXact());
+      put(csvParser.totalResponseTimeROXact());
    }
 
 }

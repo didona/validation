@@ -1,8 +1,7 @@
 package factories;
 
 import config.FactoriesConfig;
-import printers.ValidationPrinter;
-import validations.ValidatedScenario;
+import common.ValidatedScenario;
 
 import java.lang.reflect.Constructor;
 import java.util.List;

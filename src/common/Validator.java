@@ -1,7 +1,6 @@
 package common;
 
 import parse.RadargunCsvParser;
-import validations.ValidatedScenario;
 
 import java.util.List;
 
