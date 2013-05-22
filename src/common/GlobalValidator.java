@@ -2,6 +2,7 @@ package common;
 
 import config.FactoriesConfig;
 import config.GlobalValidationConfig;
+import parse.RadargunCsvParser;
 
 import java.io.File;
 import java.util.LinkedList;
@@ -23,7 +24,7 @@ public class GlobalValidator {
    private FactoriesConfig factoriesConfig;
    private GlobalValidationConfig globalValidationConfig;
 
-   List<ValidatedScenario> validatedScenarios = new LinkedList<ValidatedScenario>();
+   List<ValidatedScenario<RadargunCsvParser>> validatedScenarios = new LinkedList<ValidatedScenario<RadargunCsvParser>>();
 
 
    public GlobalValidator(GlobalValidationConfig conf, FactoriesConfig factoriesConfig) {
@@ -74,7 +75,7 @@ public class GlobalValidator {
       return f.getAbsolutePath().endsWith(".csv");
    }
 
-   public List<ValidatedScenario> getValidatedScenarios() {
+   public List<ValidatedScenario<RadargunCsvParser>> getValidatedScenarios() {
       return this.validatedScenarios;
    }
 

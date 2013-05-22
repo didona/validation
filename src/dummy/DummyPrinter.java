@@ -12,17 +12,15 @@ import java.util.LinkedList;
  */
 public class DummyPrinter extends Ispn5_2BasicValidationPrinter {
 
-   public DummyPrinter(String outpath, LinkedList<ValidatedScenario> validatedScenarios) {
+   public DummyPrinter(String outpath, LinkedList<ValidatedScenario<Ispn5_2CsvParser>> validatedScenarios) {
       super(outpath, validatedScenarios);
    }
 
    @Override
-   protected void header() {
-      basicHeader();
+   protected void _header() {
    }
 
    @Override
-   protected void line(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
-      printBasicStats(validatedScenario);
+   protected void _line(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
    }
 }

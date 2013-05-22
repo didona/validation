@@ -1,4 +1,4 @@
-package validations;
+package simpleValidation;
 
 import common.ValidatedScenario;
 import parser.Ispn5_2CsvParser;

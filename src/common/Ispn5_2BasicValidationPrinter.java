@@ -12,11 +12,16 @@ import java.util.List;
 public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Ispn5_2CsvParser> {
 
 
-   public Ispn5_2BasicValidationPrinter(String outpath, List<ValidatedScenario> validatedScenarios) {
+   public Ispn5_2BasicValidationPrinter(String outpath, List<ValidatedScenario<Ispn5_2CsvParser>> validatedScenarios) {
       super(outpath, validatedScenarios);
    }
 
-   protected final void basicHeader() {
+
+
+   protected abstract void _header();
+   protected abstract void _line(ValidatedScenario<Ispn5_2CsvParser> validatedScenario);
+
+   protected final void header() {
       put("Numkeys");
       put("NumWrites");
       put("NumThread");
@@ -68,9 +73,10 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       put("RemoteRemoteGetResponseTime");
       put("LocalRemoteGetServiceTime");
       put("LocalRemoteGetResponseTime");
+      _header();
    }
 
-   protected final void printBasicStats(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
+   protected final void line(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
       Ispn5_2CsvParser csvParser = validatedScenario.getRelevantCsv();
       double keys = csvParser.numKeys();
       put(keys);
@@ -129,6 +135,7 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       put(csvParser.remoteRemoteGetResponseTime());
       put(csvParser.localRemoteGetServiceTime());
       put(csvParser.localRemoteGetResponseTime());
+      _line(validatedScenario);
    }
 
 }

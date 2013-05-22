@@ -10,7 +10,7 @@ import common.ValidatedScenario;
  * @author Diego Didona, didona@gsd.inesc-id.pt
  *         Date: 04/10/12
  */
-public class DummyValidator extends AbstractValidator {
+public class DummyValidator extends AbstractValidator<RadargunCsvParser> {
 
 
    @Override

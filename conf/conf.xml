@@ -14,6 +14,6 @@
             minWarehouses="17"
             maxWarehouses="17"/>
     <config.FactoriesConfig
-        printerClass="dummy.DummyPrinter"
-        validatorConfig="conf/DummyValidator.xml"/>
+        printerClass="simpleValidation.SimpleValidatorPrinter"
+        validatorConfig="conf/SimpleValidator.xml"/>
 </config.ValidationConfiguration>

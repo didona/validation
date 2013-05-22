@@ -14,9 +14,9 @@ import parse.RadargunCsvParser;
  */
 public class ValidatorFactory {
 
-   public static Validator<? extends RadargunCsvParser> buildValidator(FactoriesConfig config){
+   public static Validator<RadargunCsvParser> buildValidator(FactoriesConfig config){
       String configFile = config.getValidatorConfig();
-      return (Validator<? extends RadargunCsvParser>)new DXmlParser().parse(configFile);
+      return (Validator<RadargunCsvParser>)new DXmlParser().parse(configFile);
    }
 
 }
