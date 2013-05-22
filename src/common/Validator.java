@@ -10,8 +10,8 @@ import java.util.List;
  * @author diego
  * @since 4.0
  */
-public interface Validator {
+public interface Validator<T extends RadargunCsvParser> {
 
-   public void validate(RadargunCsvParser parser) throws NotValidatedException;
-   public List<ValidatedScenario> getValidatedScenarios();
+   public void validate(T parser) throws NotValidatedException;
+   public List<ValidatedScenario<T>> getValidatedScenarios();
 }

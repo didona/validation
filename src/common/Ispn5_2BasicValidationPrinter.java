@@ -60,10 +60,14 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       put("TotalResponseTimeROXact");
       put("LocalResponseTimeWrXact");
       put("LocalResponseTimeROXact");
-      put("LocalServiceTimeWrXact");
-      put("LocalServiceTimeROXact");
-      put("BusinessLogicWrXact");
-      put("BusinessLogicROXact");
+      put("BusinessLogicWrXactS");
+      put("BusinessLogicROXactS");
+      put("BusinessLogicWrXactR");
+      put("BusinessLogicROXactR");
+      put("RemoteRemoteGetServiceTime");
+      put("RemoteRemoteGetResponseTime");
+      put("LocalRemoteGetServiceTime");
+      put("LocalRemoteGetResponseTime");
    }
 
    protected final void printBasicStats(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
@@ -115,8 +119,16 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       put(csvParser.remoteGetWaitTime());
       put(csvParser.totalResponseTimeWrXact());
       put(csvParser.totalResponseTimeROXact());
-      put(csvParser.businessLogicWrXact());
-      put(csvParser.businessLogicROXact());
+      put(csvParser.localResponseTimeWrXact());
+      put(csvParser.localResponseTimeROXact());
+      put(csvParser.businessLogicWrXactS());
+      put(csvParser.businessLogicROXactS());
+      put(csvParser.businessLogicWrXactR());
+      put(csvParser.businessLogicROXactR());
+      put(csvParser.remoteRemoteGetServiceTime());
+      put(csvParser.remoteRemoteGetResponseTime());
+      put(csvParser.localRemoteGetServiceTime());
+      put(csvParser.localRemoteGetResponseTime());
    }
 
 }

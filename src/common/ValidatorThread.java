@@ -19,14 +19,14 @@ import java.util.List;
  * @since 4.0
  */
 public class ValidatorThread extends Thread {
-   private List<ValidatedScenario> validatedScenariosList;
+   private List<ValidatedScenario<? extends RadargunCsvParser>> validatedScenariosList;
    private List<File> csvFolderList;
    private FactoriesConfig factoriesConfig;
    private GlobalValidationConfig globalValidationConfig;
 
    private final static Log log = LogFactory.getLog(ValidatorThread.class);
 
-   public ValidatorThread(List<File> l, List<ValidatedScenario> ll, FactoriesConfig fac, GlobalValidationConfig globalValidationConfig) {
+   public ValidatorThread(List<File> l, List<ValidatedScenario<? extends RadargunCsvParser>> ll, FactoriesConfig fac, GlobalValidationConfig globalValidationConfig) {
       this.csvFolderList = l;
       this.validatedScenariosList = ll;
       this.factoriesConfig = fac;
@@ -47,7 +47,7 @@ public class ValidatorThread extends Thread {
             try {
                //TODO: this is generic in the ValidationResult. This means that every Printer and Validator has to be related to a kind of parser
                RadargunCsvParser parser = new Ispn5_2CsvParser(csv.getPath());
-               Validator v = ValidatorFactory.buildValidator(factoriesConfig);
+               Validator<? extends RadargunCsvParser> v = ValidatorFactory.buildValidator(factoriesConfig);
                log.trace("Validating " + csv.getPath());
                v.validate(parser);
                enqueue(this.validatedScenariosList, v);
@@ -72,8 +72,8 @@ public class ValidatorThread extends Thread {
 
    }
 
-   private synchronized static void enqueue(List<ValidatedScenario> l, Validator rv) {
-      for (ValidatedScenario vs : rv.getValidatedScenarios())
+   private synchronized static void enqueue(List<ValidatedScenario<RadargunCsvParser>> l, Validator<RadargunCsvParser> rv) {
+      for (ValidatedScenario<RadargunCsvParser> vs : rv.getValidatedScenarios())
          l.add(vs);
    }
 

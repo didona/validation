@@ -4,6 +4,7 @@ package factories;
 import common.Validator;
 import config.FactoriesConfig;
 import configuration.xml.DXmlParser;
+import parse.RadargunCsvParser;
 
 /**
  * // TODO: Document this
@@ -13,9 +14,9 @@ import configuration.xml.DXmlParser;
  */
 public class ValidatorFactory {
 
-   public static Validator buildValidator(FactoriesConfig config){
+   public static Validator<? extends RadargunCsvParser> buildValidator(FactoriesConfig config){
       String configFile = config.getValidatorConfig();
-      return (Validator)new DXmlParser().parse(configFile);
+      return (Validator<? extends RadargunCsvParser>)new DXmlParser().parse(configFile);
    }
 
 }

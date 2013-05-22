@@ -248,7 +248,7 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
 
 
    public double localResponseTimeWrXact() {
-      return getAvgParam("LocalUpdateTxTotalResponseTime");
+      return getAvgParam("LocalUpdateTxLocalResponseTime");
    }
 
    public double localResponseTimeROXact() {
@@ -270,5 +270,6 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    public double remoteRemoteGetResponseTime(){
       return getAvgParam("GMUClusteredGetCommandResponseTime");
    }
+
 
 }

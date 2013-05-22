@@ -17,4 +17,21 @@ public class SimpleValidatedScenario extends ValidatedScenario<Ispn5_2CsvParser>
    public SimpleValidatedScenario(Ispn5_2CsvParser relevantCsv) {
       super(relevantCsv);
    }
+
+
+   public double getUpdateXactTotalResponseTime() {
+      return updateXactTotalResponseTime;
+   }
+
+   public void setUpdateXactTotalResponseTime(double updateXactTotalResponseTime) {
+      this.updateXactTotalResponseTime = updateXactTotalResponseTime;
+   }
+
+   public double getReadOnlyXactTotalResponseTime() {
+      return readOnlyXactTotalResponseTime;
+   }
+
+   public void setReadOnlyXactTotalResponseTime(double readOnlyXactTotalResponseTime) {
+      this.readOnlyXactTotalResponseTime = readOnlyXactTotalResponseTime;
+   }
 }

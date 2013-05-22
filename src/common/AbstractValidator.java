@@ -1,5 +1,7 @@
 package common;
 
+import parse.RadargunCsvParser;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -9,16 +11,16 @@ import java.util.List;
  * @author diego
  * @since 4.0
  */
-public abstract class AbstractValidator implements Validator{
+public abstract class AbstractValidator<T extends RadargunCsvParser> implements Validator<T>{
 
-   protected List<ValidatedScenario> validatedScenarioList = new LinkedList<ValidatedScenario>();
+   protected List<ValidatedScenario<T>> validatedScenarioList = new LinkedList<ValidatedScenario<T>>();
 
    @Override
-   public List<ValidatedScenario> getValidatedScenarios() {
+   public final List<ValidatedScenario<T>> getValidatedScenarios() {
       return this.validatedScenarioList;
    }
 
-   protected void addValidatedScenario(ValidatedScenario v){
+   public final void addValidatedScenario(ValidatedScenario<T> v){
       validatedScenarioList.add(v);
    }
 }
