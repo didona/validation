@@ -271,5 +271,19 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("GMUClusteredGetCommandResponseTime");
    }
 
+   public double prepareCommandServiceTime(){
+      return getAvgParam("LocalUpdateTxPrepareServiceTime");
+   }
+
+   public double prepareCommandResponseTime(){
+      return getAvgParam("LocalUpdateTxPrepareResponseTime");
+   }
+   public double commitCommandServiceTime(){
+      return getAvgParam("LocalUpdateTxCommitServiceTime");
+   }
+
+   public double commitCommandResponseTime(){
+      return getAvgParam("LocalUpdateTxCommitResponseTime");
+   }
 
 }

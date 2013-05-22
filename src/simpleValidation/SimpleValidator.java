@@ -15,6 +15,8 @@ public class SimpleValidator extends AbstractValidator<Ispn5_2CsvParser> {
 
    private SimpleValidatorConfig simpleValidatorConfig;
 
+
+
    @Override
    public void validate(Ispn5_2CsvParser parser) throws NotValidatedException {
       SimpleValidatedScenario validatedScenario = new SimpleValidatedScenario(parser);

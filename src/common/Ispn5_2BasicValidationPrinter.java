@@ -16,9 +16,8 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       super(outpath, validatedScenarios);
    }
 
-
-
    protected abstract void _header();
+
    protected abstract void _line(ValidatedScenario<Ispn5_2CsvParser> validatedScenario);
 
    protected final void header() {
@@ -73,6 +72,10 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       put("RemoteRemoteGetResponseTime");
       put("LocalRemoteGetServiceTime");
       put("LocalRemoteGetResponseTime");
+      put("CommitCommandServiceTime");
+      put("CommitCommandResponseTime");
+      put("PrepareCommandServiceTime");
+      put("PrepareCommandResponseTime");
       _header();
    }
 
@@ -135,6 +138,10 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       put(csvParser.remoteRemoteGetResponseTime());
       put(csvParser.localRemoteGetServiceTime());
       put(csvParser.localRemoteGetResponseTime());
+      put(csvParser.commitCommandServiceTime());
+      put(csvParser.commitCommandResponseTime());
+      put(csvParser.prepareCommandServiceTime());
+      put(csvParser.prepareCommandResponseTime());
       _line(validatedScenario);
    }
 

@@ -19,13 +19,16 @@ public class SimpleValidatorPrinter extends Ispn5_2BasicValidationPrinter{
       super(outpath, validatedScenarios);
    }
 
+
    @Override
    protected void _header() {
-      put("Ciao");
+      put("");
+      put("updateXactTotal");
+      put("WaitTimeFromCommit");
    }
 
    @Override
    protected void _line(ValidatedScenario<Ispn5_2CsvParser> vs) {
-      put("ciao");
+      put("");
    }
 }
