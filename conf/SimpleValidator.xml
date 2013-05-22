@@ -1,0 +1,3 @@
+<simpleValidation.SimpleValidator>
+    <config.validators.SimpleValidatorConfig string="CIAO"/>
+</simpleValidation.SimpleValidator>

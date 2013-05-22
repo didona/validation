@@ -64,6 +64,8 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put("TotalResponseTimeROXact");
       put("LocalResponseTimeWrXact");
       put("LocalResponseTimeROXact");
+      put("RGWrR");
+      put("RGROR");
       put("BusinessLogicWrXactS");
       put("BusinessLogicROXactS");
       put("BusinessLogicWrXactR");
@@ -130,6 +132,8 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put(csvParser.totalResponseTimeROXact());
       put(csvParser.localResponseTimeWrXact());
       put(csvParser.localResponseTimeROXact());
+      put(csvParser.RGSuxWrXactR());
+      put(csvParser.RGROXactR());
       put(csvParser.businessLogicWrXactS());
       put(csvParser.businessLogicROXactS());
       put(csvParser.businessLogicWrXactR());

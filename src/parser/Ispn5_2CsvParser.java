@@ -158,6 +158,14 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getSumParam("LOCAL_FAILURES") + getSumParam("REMOTE_FAILURES");
    }
 
+   public double RGSuxWrXactR() {
+      return getAvgParam("SUX_UPDATE_XACT_RESPONSE");
+   }
+
+   public double RGROXactR() {
+      return getAvgParam("SUX_READ_ONLY_XACT_RESPONSE");
+   }
+
    public double numAborts() {
       return getSumParam("NumAbortedXacts");
    }
@@ -236,7 +244,6 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    }
 
 
-
    public double localRemoteGetResponseTime() {
       return getAvgParam("RemoteGetResponseTime");
    }
@@ -263,26 +270,27 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("LocalReadOnlyTxLocalServiceTime");
    }
 
-   public double remoteRemoteGetServiceTime(){
+   public double remoteRemoteGetServiceTime() {
       return getAvgParam("GMUClusteredGetCommandServiceTime");
    }
 
-   public double remoteRemoteGetResponseTime(){
+   public double remoteRemoteGetResponseTime() {
       return getAvgParam("GMUClusteredGetCommandResponseTime");
    }
 
-   public double prepareCommandServiceTime(){
+   public double prepareCommandServiceTime() {
       return getAvgParam("LocalUpdateTxPrepareServiceTime");
    }
 
-   public double prepareCommandResponseTime(){
+   public double prepareCommandResponseTime() {
       return getAvgParam("LocalUpdateTxPrepareResponseTime");
    }
-   public double commitCommandServiceTime(){
+
+   public double commitCommandServiceTime() {
       return getAvgParam("LocalUpdateTxCommitServiceTime");
    }
 
-   public double commitCommandResponseTime(){
+   public double commitCommandResponseTime() {
       return getAvgParam("LocalUpdateTxCommitResponseTime");
    }
 

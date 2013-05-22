@@ -17,13 +17,16 @@ import java.util.List;
  * @author diego
  * @since 4.0
  */
-public abstract class ValidationPrinter <P extends RadargunCsvParser, T extends ValidatedScenario<P>>{
+public abstract class ValidationPrinter<P extends RadargunCsvParser, T extends ValidatedScenario<P>> {
 
    private List<T> validatedScenarios;
    private FileWriter fw;
    private final String sep = ";";
    private final static DecimalFormat dcf = new DecimalFormat("###,###.########");
    private final static Log log = LogFactory.getLog(ValidationPrinter.class);
+
+   protected T currentScenario;
+   protected P currentParser;
 
    private StringBuilder sb = new StringBuilder();
 
@@ -41,6 +44,8 @@ public abstract class ValidationPrinter <P extends RadargunCsvParser, T extends 
    public final void printValidation() {
       this.writeAndCarry(_header());
       for (T v : validatedScenarios) {
+         currentScenario = v;
+         currentParser = v.getRelevantCsv();
          this.writeAndCarry(_line(v));
       }
       this.close();
@@ -61,6 +66,8 @@ public abstract class ValidationPrinter <P extends RadargunCsvParser, T extends 
       try {
          this.fw.flush();
          this.fw.close();
+         this.currentParser = null;
+         this.currentScenario = null;
       } catch (IOException e) {
          e.printStackTrace();
          System.exit(-1);

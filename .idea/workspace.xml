@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d78c8c-03fd-4ccf-af32-090912bb95bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dummy/DummyPrinter.java" afterPath="$PROJECT_DIR$/src/dummy/DummyPrinter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" afterPath="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" afterPath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" afterPath="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/printers/ValidationPrinter.java" afterPath="$PROJECT_DIR$/src/printers/ValidationPrinter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/dummy.csv" afterPath="$PROJECT_DIR$/data/dummy.csv" />
@@ -38,23 +38,23 @@
     <file path="/GlobalValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369230076238" ignored="false" />
     <file path="/Main.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369047306267" ignored="false" />
     <file path="/ValidationConfiguration.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368715055146" ignored="false" />
-    <file path="/ValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369235919891" ignored="false" />
+    <file path="/ValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369237789666" ignored="false" />
     <file path="$PROJECT_DIR$/../PhysicalLayer/src/EuroSys/common/printers/BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368716533616" ignored="false" />
     <file path="/Ispn5_3BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368718934016" ignored="false" />
     <file path="/DummyPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369231585321" ignored="false" />
     <file path="/ValidatedScenario.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368718806034" ignored="false" />
-    <file path="/Ispn5_2CsvParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369232721529" ignored="false" />
+    <file path="/Ispn5_2CsvParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369243040338" ignored="false" />
     <file path="/PrinterFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369231451955" ignored="false" />
     <file path="/FactoriesConfig.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368720351246" ignored="false" />
     <file path="/DummyValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369231937472" ignored="false" />
     <file path="/AbstractValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369228818901" ignored="false" />
     <file path="/ValidatorFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369229670021" ignored="false" />
     <file path="$PROJECT_DIR$/../pedroGun/plugins/infinispan4/pom.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369147969451" ignored="false" />
-    <file path="/Ispn5_2BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369236133225" ignored="false" />
+    <file path="/Ispn5_2BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369243084121" ignored="false" />
     <file path="/NodeScopeStatisticCollector.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369156259582" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/NodeScopeStatisticCollector.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369156261782" ignored="false" />
-    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/distribution/wrappers/CustomStatsInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369142924452" ignored="false" />
-    <file path="/CustomStatsInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369142920716" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/distribution/wrappers/CustomStatsInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369241524753" ignored="false" />
+    <file path="/CustomStatsInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369241509580" ignored="false" />
     <file path="$PROJECT_DIR$/../Queues/src/open/queues/AbstractMMK.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369049638465" ignored="false" />
     <file path="$PROJECT_DIR$/../Queues/src/open/queues/Queue.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369048927403" ignored="false" />
     <file path="/Queue.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369048710996" ignored="false" />
@@ -98,29 +98,31 @@
     <file path="$PROJECT_DIR$/../gmu/core/src/main/java/org/infinispan/remoting/InboundInvocationHandlerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369093559792" ignored="false" />
     <file path="/InboundInvocationHandlerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369226679735" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/remoting/InboundInvocationHandlerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369226744059" ignored="false" />
-    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/TransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369150994482" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/TransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369248531407" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/translations/ExposedStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369146134560" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/LocalTransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369132499517" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/distribution/wrappers/RpcManagerWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369142872302" ignored="false" />
-    <file path="/TransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369150486088" ignored="false" />
+    <file path="/TransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369248001431" ignored="false" />
     <file path="/RpcManagerWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369142871884" ignored="false" />
-    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/TransactionsStatisticsRegistry.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369150401180" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/TransactionsStatisticsRegistry.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369244186528" ignored="false" />
     <file path="/TransactionsStatisticsRegistry.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369150380959" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/locking/OptimisticLockingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369138307625" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/transaction/gmu/GMUHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369140291014" ignored="false" />
     <file path="/GMUHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369140283615" ignored="false" />
     <file path="/ExposedStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369146132670" ignored="false" />
-    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/LockRelatedStatsHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369144848467" ignored="false" />
-    <file path="/LockRelatedStatsHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369144848467" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/LockRelatedStatsHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242570014" ignored="false" />
+    <file path="/LockRelatedStatsHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242528259" ignored="false" />
     <file path="$PROJECT_DIR$/../pedroGun/plugins/infinispan4/src/main/java/org/radargun/cachewrappers/InfinispanWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369148978292" ignored="false" />
-    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/gmu/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369159092597" ignored="false" />
-    <file path="/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369159064130" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/gmu/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242026526" ignored="false" />
+    <file path="/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242026526" ignored="false" />
     <file path="/SimpleValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369235105862" ignored="false" />
     <file path="/SimpleValidatedScenario.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369236395145" ignored="false" />
     <file path="/StatSource.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369229059342" ignored="false" />
     <file path="/SimpleValidatorConfig.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369230389030" ignored="false" />
-    <file path="/SimpleValidatorPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369236467126" ignored="false" />
+    <file path="/SimpleValidatorPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369238139412" ignored="false" />
     <file path="/SimpleValidator.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369231194428" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/distribution/wrappers/LockManagerWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369244143211" ignored="false" />
+    <file path="/LockManagerWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369244139611" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,19 +204,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ispn5_2BasicValidationPrinter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Ispn5_2BasicValidationPrinter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="34" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
+            <state line="64" column="82" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.3653846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DummyPrinter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DummyPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dummy/DummyPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="99" selection-start="338" selection-end="338" vertical-scroll-proportion="0.23076923">
+            <state line="12" column="99" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -223,7 +225,7 @@
       <file leaf-file-name="SimpleValidatorPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
+            <state line="20" column="47" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -234,8 +236,10 @@
       <file leaf-file-name="Ispn5_2CsvParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="284" column="23" selection-start="7549" selection-end="7549" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="165" column="56" selection-start="4200" selection-end="4200" vertical-scroll-proportion="-11.5">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -243,7 +247,7 @@
       <file leaf-file-name="SimpleValidatedScenario.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatedScenario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="80" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
+            <state line="11" column="47" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -254,7 +258,7 @@
       <file leaf-file-name="ValidatedScenario.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/ValidatedScenario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="10" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+            <state line="10" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -274,7 +278,7 @@
       <file leaf-file-name="ValidationPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/printers/ValidationPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
+            <state line="69" column="37" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -307,13 +311,13 @@
         <option value="$PROJECT_DIR$/conf/SimpleValidator.xml" />
         <option value="$PROJECT_DIR$/src/factories/PrinterFactory.java" />
         <option value="$PROJECT_DIR$/src/dummy/DummyValidator.java" />
-        <option value="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
         <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidator.java" />
-        <option value="$PROJECT_DIR$/src/printers/ValidationPrinter.java" />
         <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidatedScenario.java" />
-        <option value="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" />
-        <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" />
         <option value="$PROJECT_DIR$/src/dummy/DummyPrinter.java" />
+        <option value="$PROJECT_DIR$/src/printers/ValidationPrinter.java" />
+        <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" />
+        <option value="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
+        <option value="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" />
       </list>
     </option>
   </component>
@@ -805,25 +809,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/AbstractValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#344#366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dummy/DummyValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="22" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="23" selection-start="7549" selection-end="7549" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -837,23 +825,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/ValidatedScenario.java">
+    <entry file="file://$PROJECT_DIR$/src/dummy/DummyPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="10" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+        <state line="12" column="99" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/printers/ValidationPrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/common/AbstractValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
+        <state line="22" column="21" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#344#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/ValidatedScenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatedScenario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="80" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
+        <state line="11" column="47" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/printers/ValidationPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="37" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="47" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="56" selection-start="4200" selection-end="4200" vertical-scroll-proportion="-11.5">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -862,23 +884,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dummy/DummyPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="99" selection-start="338" selection-end="338" vertical-scroll-proportion="0.23076923">
+        <state line="64" column="82" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.3653846">
           <folding />
         </state>
       </provider>
