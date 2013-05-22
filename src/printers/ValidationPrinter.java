@@ -17,9 +17,9 @@ import java.util.List;
  * @author diego
  * @since 4.0
  */
-public abstract class ValidationPrinter <T extends RadargunCsvParser>{
+public abstract class ValidationPrinter <P extends RadargunCsvParser, T extends ValidatedScenario<P>>{
 
-   private List<ValidatedScenario<T>> validatedScenarios;
+   private List<T> validatedScenarios;
    private FileWriter fw;
    private final String sep = ";";
    private final static DecimalFormat dcf = new DecimalFormat("###,###.########");
@@ -27,7 +27,7 @@ public abstract class ValidationPrinter <T extends RadargunCsvParser>{
 
    private StringBuilder sb = new StringBuilder();
 
-   public ValidationPrinter(String outpath, List<ValidatedScenario<T>> validatedScenarios) {
+   public ValidationPrinter(String outpath, List<T> validatedScenarios) {
       try {
          this.fw = new FileWriter(new File(outpath));
       } catch (IOException e) {
@@ -40,7 +40,7 @@ public abstract class ValidationPrinter <T extends RadargunCsvParser>{
 
    public final void printValidation() {
       this.writeAndCarry(_header());
-      for (ValidatedScenario<T> v : validatedScenarios) {
+      for (T v : validatedScenarios) {
          this.writeAndCarry(_line(v));
       }
       this.close();
@@ -99,7 +99,7 @@ public abstract class ValidationPrinter <T extends RadargunCsvParser>{
          appendAndSep(sb, d);
    }
 
-   private String _line(ValidatedScenario<T> vs) {
+   private String _line(T vs) {
       line(vs);
       String line = sb.toString();
       flush();
@@ -116,5 +116,5 @@ public abstract class ValidationPrinter <T extends RadargunCsvParser>{
 
    protected abstract void header();
 
-   protected abstract void line(ValidatedScenario<T> vs);
+   protected abstract void line(T vs);
 }

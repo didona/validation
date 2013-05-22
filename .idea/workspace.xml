@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d78c8c-03fd-4ccf-af32-090912bb95bb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dummy/DummyPrinter.java" afterPath="$PROJECT_DIR$/src/dummy/DummyPrinter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" afterPath="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" afterPath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpleValidation/SimpleValidator.java" afterPath="$PROJECT_DIR$/src/simpleValidation/SimpleValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" afterPath="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/printers/ValidationPrinter.java" afterPath="$PROJECT_DIR$/src/printers/ValidationPrinter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/dummy.csv" afterPath="$PROJECT_DIR$/data/dummy.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Validation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +38,7 @@
     <file path="/GlobalValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369230076238" ignored="false" />
     <file path="/Main.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369047306267" ignored="false" />
     <file path="/ValidationConfiguration.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368715055146" ignored="false" />
-    <file path="/ValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369235145994" ignored="false" />
+    <file path="/ValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369235919891" ignored="false" />
     <file path="$PROJECT_DIR$/../PhysicalLayer/src/EuroSys/common/printers/BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368716533616" ignored="false" />
     <file path="/Ispn5_3BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368718934016" ignored="false" />
     <file path="/DummyPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369231585321" ignored="false" />
@@ -49,7 +50,7 @@
     <file path="/AbstractValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369228818901" ignored="false" />
     <file path="/ValidatorFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369229670021" ignored="false" />
     <file path="$PROJECT_DIR$/../pedroGun/plugins/infinispan4/pom.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369147969451" ignored="false" />
-    <file path="/Ispn5_2BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369233163836" ignored="false" />
+    <file path="/Ispn5_2BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369236133225" ignored="false" />
     <file path="/NodeScopeStatisticCollector.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369156259582" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/NodeScopeStatisticCollector.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369156261782" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/distribution/wrappers/CustomStatsInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369142924452" ignored="false" />
@@ -115,10 +116,10 @@
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/gmu/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369159092597" ignored="false" />
     <file path="/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369159064130" ignored="false" />
     <file path="/SimpleValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369235105862" ignored="false" />
-    <file path="/SimpleValidatedScenario.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369228486178" ignored="false" />
+    <file path="/SimpleValidatedScenario.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369236395145" ignored="false" />
     <file path="/StatSource.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369229059342" ignored="false" />
     <file path="/SimpleValidatorConfig.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369230389030" ignored="false" />
-    <file path="/SimpleValidatorPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369235094385" ignored="false" />
+    <file path="/SimpleValidatorPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369236467126" ignored="false" />
     <file path="/SimpleValidator.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369231194428" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,27 +205,16 @@
       <file leaf-file-name="Ispn5_2BasicValidationPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="69" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="method#Ispn5_2BasicValidationPrinter#0;class#Ispn5_2BasicValidationPrinter#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DummyPrinter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dummy/DummyPrinter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="54" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+            <state line="20" column="34" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrinterFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/factories/PrinterFactory.java">
+      <file leaf-file-name="DummyPrinter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dummy/DummyPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0">
+            <state line="12" column="99" selection-start="338" selection-end="338" vertical-scroll-proportion="0.23076923">
               <folding />
             </state>
           </provider>
@@ -233,7 +223,7 @@
       <file leaf-file-name="SimpleValidatorPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="69" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+            <state line="28" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -253,10 +243,19 @@
       <file leaf-file-name="SimpleValidatedScenario.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatedScenario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="51" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+            <state line="11" column="80" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidatedScenario.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/ValidatedScenario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="10" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -272,10 +271,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidationPrinter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ValidationPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/printers/ValidationPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.28846154">
+            <state line="19" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -299,7 +298,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/common/StatSource.java" />
         <option value="$PROJECT_DIR$/src/common/Validator.java" />
         <option value="$PROJECT_DIR$/src/common/ValidatorThread.java" />
         <option value="$PROJECT_DIR$/src/factories/ValidatorFactory.java" />
@@ -308,13 +306,14 @@
         <option value="$PROJECT_DIR$/src/validations/SimpleValidator.java" />
         <option value="$PROJECT_DIR$/conf/SimpleValidator.xml" />
         <option value="$PROJECT_DIR$/src/factories/PrinterFactory.java" />
-        <option value="$PROJECT_DIR$/src/dummy/DummyPrinter.java" />
         <option value="$PROJECT_DIR$/src/dummy/DummyValidator.java" />
         <option value="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
-        <option value="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" />
-        <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" />
         <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidator.java" />
         <option value="$PROJECT_DIR$/src/printers/ValidationPrinter.java" />
+        <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidatedScenario.java" />
+        <option value="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" />
+        <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" />
+        <option value="$PROJECT_DIR$/src/dummy/DummyPrinter.java" />
       </list>
     </option>
   </component>
@@ -692,7 +691,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16435432" sideWeight="0.674144" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32585597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32585597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -764,15 +763,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/common/GlobalValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="50" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#539#577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/FactoriesConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
@@ -815,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dummy/DummyPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/AbstractValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
@@ -835,15 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="22" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatedScenario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="51" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,9 +837,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/common/ValidatedScenario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="69" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+        <state line="22" column="10" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/printers/ValidationPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatedScenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="80" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -874,16 +862,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="69" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+        <state line="20" column="34" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="method#Ispn5_2BasicValidationPrinter#0;class#Ispn5_2BasicValidationPrinter#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/printers/ValidationPrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/dummy/DummyPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.28846154">
+        <state line="12" column="99" selection-start="338" selection-end="338" vertical-scroll-proportion="0.23076923">
           <folding />
         </state>
       </provider>

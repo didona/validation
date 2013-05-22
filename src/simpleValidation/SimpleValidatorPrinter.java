@@ -13,9 +13,9 @@ import java.util.List;
  * @author diego
  * @since 4.0
  */
-public class SimpleValidatorPrinter extends Ispn5_2BasicValidationPrinter{
+public final class SimpleValidatorPrinter extends Ispn5_2BasicValidationPrinter<SimpleValidatedScenario>{
 
-   public SimpleValidatorPrinter(String outpath, LinkedList<ValidatedScenario<Ispn5_2CsvParser>> validatedScenarios) {
+   public SimpleValidatorPrinter(String outpath, LinkedList<SimpleValidatedScenario> validatedScenarios) {
       super(outpath, validatedScenarios);
    }
 
@@ -27,8 +27,9 @@ public class SimpleValidatorPrinter extends Ispn5_2BasicValidationPrinter{
       put("WaitTimeFromCommit");
    }
 
+
    @Override
-   protected void _line(ValidatedScenario<Ispn5_2CsvParser> vs) {
+   protected void _line(SimpleValidatedScenario vs) {
       put("");
    }
 }

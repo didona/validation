@@ -9,16 +9,16 @@ import java.util.List;
 /**
  * @author Diego Didona, didona@gsd.inesc-id.pt Date: 04/10/12
  */
-public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Ispn5_2CsvParser> {
+public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<Ispn5_2CsvParser>> extends ValidationPrinter<Ispn5_2CsvParser,V>  {
 
 
-   public Ispn5_2BasicValidationPrinter(String outpath, List<ValidatedScenario<Ispn5_2CsvParser>> validatedScenarios) {
+   public Ispn5_2BasicValidationPrinter(String outpath, List<V> validatedScenarios) {
       super(outpath, validatedScenarios);
    }
 
    protected abstract void _header();
 
-   protected abstract void _line(ValidatedScenario<Ispn5_2CsvParser> validatedScenario);
+   protected abstract void _line(V validatedScenario);
 
    protected final void header() {
       put("Numkeys");
@@ -79,7 +79,7 @@ public abstract class Ispn5_2BasicValidationPrinter extends ValidationPrinter<Is
       _header();
    }
 
-   protected final void line(ValidatedScenario<Ispn5_2CsvParser> validatedScenario) {
+   protected final void line(V validatedScenario) {
       Ispn5_2CsvParser csvParser = validatedScenario.getRelevantCsv();
       double keys = csvParser.numKeys();
       put(keys);
