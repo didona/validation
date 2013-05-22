@@ -166,6 +166,10 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("SUX_READ_ONLY_XACT_RESPONSE");
    }
 
+   public double RGWrCommitR() {
+      return getAvgParam("COMMIT_TIME");
+   }
+
    public double numAborts() {
       return getSumParam("NumAbortedXacts");
    }
