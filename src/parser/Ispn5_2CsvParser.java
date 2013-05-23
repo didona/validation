@@ -69,6 +69,18 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("AvgLocalLockHoldTime");
    }
 
+   public double localSuccessfulHoldtime(){
+      return getAvgParam("AvgLocalSuccessfulLockHoldTime");
+   }
+
+   public double localLocalAbortHoldTime(){
+      return getAvgParam("AvgLocalLocalAbortLockHoldTime");
+   }
+
+   public double localRemoteAbortHoldTime(){
+     return getAvgParam("AvgLocalRemoteAbortLockHoldTime");
+   }
+
    public double remoteHoldTime() {
       return getAvgParam("AvgRemoteLockHoldTime");
    }

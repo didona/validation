@@ -45,7 +45,10 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put("RemoteReadsInROXact");
       put("RemoteReadsInWrXact");
       put("LockHoldTime");
-      put("LocalLocHoldTime");
+      put("LocalLockHoldTime");
+      put("LocalSuccessfulLockHoldTime");
+      put("LocalLocalAbortLockHoldTime");
+      put("LocalRemoteAbortLockHoldTime");
       put("RemoteLockHoldTime");
       put("PrepareRtt");
       put("CommitAsyncNet");
@@ -115,6 +118,9 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put(csvParser.remoteReadsPerWrXact());
       put(csvParser.holdTime());
       put(csvParser.localHoldTime());
+      put(csvParser.localSuccessfulHoldtime());
+      put(csvParser.localLocalAbortHoldTime());
+      put(csvParser.localRemoteAbortHoldTime());
       put(csvParser.remoteHoldTime());
       put(csvParser.prepareRtt());
       put(csvParser.netAsyncCommit());
