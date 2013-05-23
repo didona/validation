@@ -21,12 +21,15 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
    protected abstract void _line(V validatedScenario);
 
    protected final void header() {
+      put("ReplicationDegree");
       put("Numkeys");
       put("NumWrites");
       put("NumThread");
       put("NumNodes");
       put("Warehouses");
       put("Parallelism");
+      put("CPU");
+      put("Memory");
       put("Throughput");
       put("WriteThroughput");
       put("ReadThroughput");
@@ -87,16 +90,17 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
 
    protected final void line(V validatedScenario) {
       Ispn5_2CsvParser csvParser = validatedScenario.getRelevantCsv();
-      double keys = csvParser.numKeys();
-      put(keys);
-      double writes = csvParser.putsPerWrXact();
-      put(writes);
+      put(csvParser.replicationDegree());
+      put(csvParser.numKeys());
+      put(csvParser.putsPerWrXact());
       double threads = csvParser.numThreads();
       put(threads);
       double nodes = csvParser.getNumNodes();
       put(nodes);
       put(csvParser.numWarehouses());
       put(nodes * threads);
+      put(csvParser.cpu());
+      put(csvParser.mem());
       double writeT = csvParser.writeThroughput();
       double readT = csvParser.readThroughput();
       put(writeT + readT);

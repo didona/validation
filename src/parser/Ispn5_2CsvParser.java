@@ -93,6 +93,18 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("AvgRollbackAsync");
    }
 
+   public double replicationDegree(){
+      return getAvgParam("ReplicationDegree");
+   }
+
+   public double cpu(){
+      return getAvgParam("CPU_USAGE");
+   }
+
+   public double mem(){
+      return getAvgParam("MEM_USAGE");
+   }
+
    //TODO: take the stats also at ispn level
    public double earlyAbortProbability() {
       double localFailures = getAvgParam("LOCAL_FAILURES");

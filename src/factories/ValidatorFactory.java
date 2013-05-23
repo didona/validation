@@ -16,7 +16,7 @@ public class ValidatorFactory {
 
    public static Validator<RadargunCsvParser> buildValidator(FactoriesConfig config){
       String configFile = config.getValidatorConfig();
-      return (Validator<RadargunCsvParser>)new DXmlParser().parse(configFile);
+      return new DXmlParser<Validator<RadargunCsvParser>>().parse(configFile);
    }
 
 }
