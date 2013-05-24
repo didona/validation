@@ -64,8 +64,11 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put("RemoteGetMessageSize");
       put("RemoteGetReplyMessageSize");
       put("LocalCommitWaitTime");
+      put("NumLocalCommitsWait");
       put("RemoteCommitWaitTime");
+      put("NumRemoteCommitsWait");
       put("RemoteGetWaitTime");
+      put("NumRemoteGetsWait");
       put("TotalResponseTimeWrXact");
       put("TotalResponseTimeROXact");
       put("LocalResponseTimeWrXact");
@@ -137,8 +140,11 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put(csvParser.sizeRemoteGetMsg());
       put(csvParser.sizeRemoteGetReplyMsg());
       put(csvParser.localCommitWaitTime());
+      put(csvParser.numLocalCommitsWait());
       put(csvParser.remoteCommitWaitTime());
+      put(csvParser.numRemoteCommitsWait());
       put(csvParser.remoteGetWaitTime());
+      put(csvParser.numRemoteGetsWait());
       put(csvParser.totalResponseTimeWrXact());
       put(csvParser.totalResponseTimeROXact());
       put(csvParser.localResponseTimeWrXact());

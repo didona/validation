@@ -69,16 +69,16 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("AvgLocalLockHoldTime");
    }
 
-   public double localSuccessfulHoldtime(){
+   public double localSuccessfulHoldtime() {
       return getAvgParam("AvgLocalSuccessfulLockHoldTime");
    }
 
-   public double localLocalAbortHoldTime(){
+   public double localLocalAbortHoldTime() {
       return getAvgParam("AvgLocalLocalAbortLockHoldTime");
    }
 
-   public double localRemoteAbortHoldTime(){
-     return getAvgParam("AvgLocalRemoteAbortLockHoldTime");
+   public double localRemoteAbortHoldTime() {
+      return getAvgParam("AvgLocalRemoteAbortLockHoldTime");
    }
 
    public double remoteHoldTime() {
@@ -93,15 +93,15 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("AvgRollbackAsync");
    }
 
-   public double replicationDegree(){
+   public double replicationDegree() {
       return getAvgParam("ReplicationDegree");
    }
 
-   public double cpu(){
+   public double cpu() {
       return getAvgParam("CPU_USAGE");
    }
 
-   public double mem(){
+   public double mem() {
       return getAvgParam("MEM_USAGE");
    }
 
@@ -320,6 +320,18 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
 
    public double commitCommandResponseTime() {
       return getAvgParam("LocalUpdateTxCommitResponseTime");
+   }
+
+   public double numLocalCommitsWait() {
+      return getAvgParam("NumWaitedLocalCommits");
+   }
+
+   public double numRemoteCommitsWait() {
+      return getAvgParam("NumWaitedRemoteCommits");
+   }
+
+   public double numRemoteGetsWait() {
+      return getAvgParam("NumWaitedRemoteGets");
    }
 
 }
