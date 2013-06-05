@@ -322,4 +322,45 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("LocalUpdateTxCommitResponseTime");
    }
 
+   public double remoteCommitCommandServiceTime() {
+      return getAvgParam("RemoteUpdateTxCommitServiceTime");
+   }
+
+   public double remoteCommitCommandResponseTime() {
+      return getAvgParam("RemoteUpdateTxCommitResponseTime");
+   }
+
+
+   public double localLocalRollbackServiceTime(){
+      return getAvgParam("LocalUpdateTxLocalRollbackServiceTime");
+   }
+
+   public double localLocalRollbackResponseTime(){
+      return getAvgParam("LocalUpdateTxLocalRollbackResponseTime");
+   }
+   public double localRemoteRollbackServiceTime(){
+      return getAvgParam("LocalUpdateTxRemoteRollbackServiceTime");
+   }
+
+   public double localRemoteRollbackResponseTime(){
+      return getAvgParam("LocalUpdateTxRemoteRollbackResponseTime");
+   }
+   public double remoteRollbackServiceTime(){
+      return getAvgParam("RemoteUpdateTxRollbackServiceTime");
+   }
+
+   public double remoteRollbackResponseTime(){
+      return getAvgParam("RemoteUpdateTxRollbackResponseTime");
+   }
+
+   public double remotePrepareServiceTime(){
+      return getAvgParam("RemoteUpdateTxPrepareServiceTime");
+   }
+
+   public double remotePrepareResponseTime(){
+      return getAvgParam("RemoteUpdateTxPrepareResponseTime");
+   }
+
+
+
 }
