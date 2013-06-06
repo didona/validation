@@ -42,12 +42,12 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       double applicationContentionFactor = applicationContentionFactor(parser);
       double prepareMessageSize = parser.sizePrepareMsg();
       double mem = parser.mem();
-      double numCores = 8;
+      double numCores = 1;
       //Gmu-specific
       int firstWrite = 1;//(int) parser.numReadsBeforeFirstWrite();
       double localAccessProbability = parser.localReadProbability();
       double replicationDegree = parser.replicationDegree();
-      double localPrimaryOwnerProbability = replicationDegree / numNodes;
+      double localPrimaryOwnerProbability = 1 / numNodes;
       double readsPerROXact = parser.readsPerROXact();
       double readsPerWrXact = parser.readsPerWrXact();
 
@@ -66,7 +66,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       workload.setLocalAccessProbability(localPrimaryOwnerProbability);
       workload.setReadsPerROXact(readsPerROXact);
       workload.setReadsPerWrXact(readsPerWrXact);
-
+      log.trace(workload);
       return workload;
    }
 
@@ -112,7 +112,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       cpu.setReadOnlyTxBusinessLogicS(readOnlyTxBusinessLogicS);
       cpu.setReadOnlyTxPrepareS(readOnlyTxPrepareS);
       cpu.setReadOnlyTxCommitS(readOnlyTxCommitS);
-      System.out.println(cpu);
+      log.trace(cpu);
       return cpu;
    }
 
@@ -126,6 +126,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       net.setPrepareRtt(prepareRtt);
       net.setRemoteGetNet(remoteGetNet);
       net.setRollbackNet(rollbackNet);
+      log.trace(net) ;
       return net;
    }
 
