@@ -16,10 +16,10 @@ import parser.Ispn5_2CsvParser;
  * @author diego
  * @since 4.0
  */
-public class GmuFixedBocceValidator extends AbstractValidator<GmuCsvParser> {
+public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> {
 
    @Override
-   public void validate(GmuCsvParser parser) throws NotValidatedException {
+   public void validate(Ispn5_2CsvParser parser) throws NotValidatedException {
       ISPN_52_TPC_GMU_Workload workload = buildWorkload(parser);
       GmuQueueCpuFixedNetServiceTimes serviceTimes = buildServiceTimes(parser);
       QueueCpuFixedNetGmuTas tas = new QueueCpuFixedNetGmuTas();
@@ -32,7 +32,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<GmuCsvParser> {
    }
 
 
-   private ISPN_52_TPC_GMU_Workload buildWorkload(GmuCsvParser parser) {
+   private ISPN_52_TPC_GMU_Workload buildWorkload(Ispn5_2CsvParser parser) {
       ISPN_52_TPC_GMU_Workload workload = new ISPN_52_TPC_GMU_Workload();
       //Common
       double numNodes = parser.getNumNodes();
@@ -129,7 +129,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<GmuCsvParser> {
    }
 
 
-   private double applicationContentionFactor(GmuCsvParser parser) {
+   private double applicationContentionFactor(Ispn5_2CsvParser parser) {
       return 1.0D / parser.numKeys();
    }
 }

@@ -1,0 +1,2 @@
+<ispn_53.solver.GmuSolver
+    physicalModel="ispn_53.physical.models.GmuQueueCpuFixedNetModel"/>

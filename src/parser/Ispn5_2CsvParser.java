@@ -322,7 +322,7 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("LocalUpdateTxCommitResponseTime");
    }
 
-<<<<<<< HEAD
+
    public double numLocalCommitsWait() {
       return getAvgParam("NumWaitedLocalCommits");
    }
@@ -335,7 +335,7 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getAvgParam("NumWaitedRemoteGets");
    }
 
-=======
+
    public double remoteCommitCommandServiceTime() {
       return getAvgParam("RemoteUpdateTxCommitServiceTime");
    }
@@ -376,6 +376,4 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    }
 
 
-
->>>>>>>  * Adding gmu and data
 }
