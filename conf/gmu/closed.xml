@@ -3,7 +3,7 @@
         convergenceThreshold=".01"
         validateUnstable="true"
         cpuUtilizationCutPoint=".95">
-        <common.solver.closed.lambda.LambdaGeneratorStack>
+        <common.solver.closed.lambda.LambdaGeneratorStack timeUnit="SECONDS">
             <common.solver.closed.lambda.RecursiveLambdaGenerator
             minLambda="1"
             maxIterations="50"/>

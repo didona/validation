@@ -1,2 +1,3 @@
 <ispn_53.solver.GmuSolver
-    physicalModel="ispn_53.physical.models.GmuQueueCpuFixedNetModel"/>
+    physicalModelConf="conf/gmu/queueCpuFixedNet.xml">
+</ispn_53.solver.GmuSolver>

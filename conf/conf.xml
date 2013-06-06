@@ -2,7 +2,7 @@
    	   <config.GlobalValidationConfig
             numThreads="1"
             testPath="data/"
-            output="data/dummy"
+            output="data/gmu"
             minThreads="1"
             maxThreads="16"
             minNodes="2"

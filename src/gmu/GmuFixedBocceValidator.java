@@ -44,7 +44,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       double mem = parser.mem();
       double numCores = 8;
       //Gmu-specific
-      int firstWrite = (int) parser.numReadsBeforeFirstWrite();
+      int firstWrite = 1;//(int) parser.numReadsBeforeFirstWrite();
       double localAccessProbability = parser.localReadProbability();
       double replicationDegree = parser.replicationDegree();
       double localPrimaryOwnerProbability = replicationDegree / numNodes;
@@ -112,6 +112,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       cpu.setReadOnlyTxBusinessLogicS(readOnlyTxBusinessLogicS);
       cpu.setReadOnlyTxPrepareS(readOnlyTxPrepareS);
       cpu.setReadOnlyTxCommitS(readOnlyTxCommitS);
+      System.out.println(cpu);
       return cpu;
    }
 

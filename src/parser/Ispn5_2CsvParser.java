@@ -259,8 +259,11 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
 
    public double businessLogicWrXactS() {
       double remoteGetCost = localRemoteGetServiceTime();
+      System.out.println("RemoteGetS "+remoteGetCost);
       double numRemoteRd = remoteReadsPerWrXact();
+      System.out.println("RemoteReads "+numRemoteRd);
       double local = localServiceTimeWrXact();
+      System.out.println("LocalS "+local);
       return local - remoteGetCost * numRemoteRd;
    }
 
@@ -291,7 +294,7 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    }
 
    public double localServiceTimeWrXact() {
-      return getAvgParam("LocalUpdateTxTotalServiceTime");
+      return getAvgParam("LocalUpdateTxTotalCpuTime");
    }
 
    public double localServiceTimeROXact() {
