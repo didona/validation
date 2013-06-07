@@ -20,15 +20,39 @@ public class GmuValidatedScenario extends ValidatedScenario<Ispn5_2CsvParser> {
    }
 
 
-   public double predThroughput(){
+   public double predThroughput() {
       return result.throughput();
    }
 
-   public double predThroughputR(){
+   public double predThroughputR() {
       return result.roThroughput();
    }
 
-   public double predThroughputW(){
+   public double predThroughputW() {
       return result.wrThroughput();
+   }
+
+   public double wrR() {
+      return result.updateXactR();
+   }
+
+   public double roR() {
+      return result.readOnlyXactR();
+   }
+
+   public double updateLocalR() {
+      return result.updateXactLocalR();
+   }
+
+   public double updatePrepareR() {
+      return result.updateXactPrepareR();
+   }
+
+   public double updateCommitR() {
+      return result.updateXactCommitR();
+   }
+
+   public double remoteGetR(){
+      return result.remoteGetR();
    }
 }

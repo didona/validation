@@ -3,6 +3,7 @@ package gmu;
 import common.Ispn5_2BasicValidationPrinter;
 import simpleValidation.SimpleValidatedScenario;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ import java.util.List;
  */
 public class GmuValidatorPrinter extends Ispn5_2BasicValidationPrinter<GmuValidatedScenario> {
 
-   public GmuValidatorPrinter(String outpath, List<GmuValidatedScenario> validatedScenarios) {
+   public GmuValidatorPrinter(String outpath, LinkedList<GmuValidatedScenario> validatedScenarios) {
       super(outpath, validatedScenarios);
    }
 
@@ -23,13 +24,25 @@ public class GmuValidatorPrinter extends Ispn5_2BasicValidationPrinter<GmuValida
       put("Throughput");
       put("RdThroughput");
       put("WrThroughput");
+      put("RdResponseTime");
+      put("WrResponseTime");
+      put("WrLocalR");
+      put("WrPrepareR");
+      put("WrCommitR");
+      put("RemoteGetR");
    }
 
    @Override
    protected void _line(GmuValidatedScenario validatedScenario) {
       put("");
-      put(validatedScenario.predThroughput());
-      put(validatedScenario.predThroughputR());
-      put(validatedScenario.predThroughputW());
+      put(validatedScenario.predThroughput()*1e6);
+      put(validatedScenario.predThroughputR()*1e6);
+      put(validatedScenario.predThroughputW()*1e6);
+      put(validatedScenario.roR());
+      put(validatedScenario.wrR());
+      put(validatedScenario.updateLocalR());
+      put(validatedScenario.updatePrepareR());
+      put(validatedScenario.updateCommitR());
+      put(validatedScenario.remoteGetR());
    }
 }
