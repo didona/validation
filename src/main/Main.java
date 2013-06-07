@@ -8,6 +8,7 @@ import configuration.xml.DXmlParser;
 import factories.PrinterFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.log4j.PropertyConfigurator;
 import printers.ValidationPrinter;
 
 /**
@@ -20,7 +21,13 @@ public class Main {
 
    private final static Log log = LogFactory.getLog(Main.class);
 
+   static {
+
+   }
+
+
    public static void main(String[] args) throws Exception {
+      PropertyConfigurator.configure("conf/log4j.properties");
       ValidationConfiguration conf = (ValidationConfiguration) new DXmlParser().parse("conf/conf.xml");
       GlobalValidationConfig globalValidationConfig = conf.getGlobalValidationConfig();
       FactoriesConfig factoriesConfig = conf.getFactoriesConfig();

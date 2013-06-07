@@ -1,8 +1,8 @@
 <config.ValidationConfiguration>
    	   <config.GlobalValidationConfig
             numThreads="1"
-            testPath="data/"
-            output="data/gmu"
+            testPath="temp/"
+            output="temp/gmu"
             minThreads="1"
             maxThreads="16"
             minNodes="2"
@@ -14,6 +14,6 @@
             minWarehouses="17"
             maxWarehouses="17"/>
     <config.FactoriesConfig
-        printerClass="simpleValidation.SimpleValidatorPrinter"
+        printerClass="simpleValidation.GmuValidatorPrinter"
         validatorConfig="conf/FixedBocceGmu.xml"/>
 </config.ValidationConfiguration>

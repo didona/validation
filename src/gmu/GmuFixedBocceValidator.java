@@ -8,6 +8,7 @@ import ispn_53.input.ISPN_52_TPC_GMU_Workload;
 import ispn_53.input.physical.GmuCpuServiceTimes;
 import ispn_53.input.physical.GmuFixedNetServiceTimes;
 import ispn_53.input.physical.GmuQueueCpuFixedNetServiceTimes;
+import ispn_53.output.ISPN_53_D_TPC_GMU_Result;
 import parser.Ispn5_2CsvParser;
 
 /**
@@ -23,12 +24,15 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       ISPN_52_TPC_GMU_Workload workload = buildWorkload(parser);
       GmuQueueCpuFixedNetServiceTimes serviceTimes = buildServiceTimes(parser);
       QueueCpuFixedNetGmuTas tas = new QueueCpuFixedNetGmuTas();
+      ISPN_53_D_TPC_GMU_Result result;
       try {
-         tas.solve(workload,serviceTimes);
+         result = tas.solve(workload,serviceTimes);
       } catch (TasException e) {
          throw new NotValidatedException(e.getMessage());
       }
 
+      log.trace("I have a stable result");
+      addValidatedScenario(new GmuValidatedScenario(parser,result));
    }
 
 

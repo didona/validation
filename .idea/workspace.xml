@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d78c8c-03fd-4ccf-af32-090912bb95bb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/simpleXmlParser.jar" afterPath="$PROJECT_DIR$/lib/simpleXmlParser.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gmu/GmuFixedBocceValidator.java" afterPath="$PROJECT_DIR$/src/gmu/GmuFixedBocceValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" afterPath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/dummy.csv" afterPath="$PROJECT_DIR$/data/dummy.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gmu/GmuValidatedScenario.java" afterPath="$PROJECT_DIR$/src/gmu/GmuValidatedScenario.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gmu/GmuValidatorPrinter.java" afterPath="$PROJECT_DIR$/src/gmu/GmuValidatorPrinter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/conf.xml" afterPath="$PROJECT_DIR$/conf/conf.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/log4j.properties" afterPath="$PROJECT_DIR$/conf/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Validation.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370523622686" ignored="false" />
+    <file path="/Dummy.txt" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370600794144" ignored="false" />
     <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stages/CsvReportGenerationStage.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368707161175" ignored="false" />
     <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stressors/SyntheticPutGetStressor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368707662007" ignored="false" />
     <file path="/SyntheticPutGetStressor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368707561454" ignored="false" />
@@ -52,7 +55,7 @@
     <file path="/Ispn5_2BasicValidationPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369314704240" ignored="false" />
     <file path="/NodeScopeStatisticCollector.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369156259582" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/NodeScopeStatisticCollector.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369156261782" ignored="false" />
-    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/distribution/wrappers/CustomStatsInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369241524753" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/distribution/wrappers/CustomStatsInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
     <file path="/CustomStatsInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369301829114" ignored="false" />
     <file path="$PROJECT_DIR$/../Queues/src/open/queues/AbstractMMK.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369049638465" ignored="false" />
     <file path="$PROJECT_DIR$/../Queues/src/open/queues/Queue.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369048927403" ignored="false" />
@@ -96,7 +99,7 @@
     <file path="$PROJECT_DIR$/../gmu/core/src/main/java/org/infinispan/stats/TransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369093304864" ignored="false" />
     <file path="$PROJECT_DIR$/../gmu/core/src/main/java/org/infinispan/remoting/InboundInvocationHandlerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369265674245" ignored="false" />
     <file path="/InboundInvocationHandlerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369265657981" ignored="false" />
-    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/remoting/InboundInvocationHandlerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369226744059" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/remoting/InboundInvocationHandlerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/TransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369248531407" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/translations/ExposedStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369146134560" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/LocalTransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369132499517" ignored="false" />
@@ -112,7 +115,7 @@
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/LockRelatedStatsHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242570014" ignored="false" />
     <file path="/LockRelatedStatsHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242528259" ignored="false" />
     <file path="$PROJECT_DIR$/../pedroGun/plugins/infinispan4/src/main/java/org/radargun/cachewrappers/InfinispanWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369148978292" ignored="false" />
-    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/gmu/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242026526" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/gmu/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
     <file path="/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242026526" ignored="false" />
     <file path="/SimpleValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369235105862" ignored="false" />
     <file path="/SimpleValidatedScenario.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369236395145" ignored="false" />
@@ -156,21 +159,21 @@
     <file path="/TasUtil.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369344043110" ignored="false" />
     <file path="/GmuValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370459394811" ignored="false" />
     <file path="/GmuCsvParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370455813062" ignored="false" />
-    <file path="/GmuFixedBocceValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370549799042" ignored="false" />
+    <file path="/GmuFixedBocceValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370607005978" ignored="false" />
     <file path="/FixedBocceGmu.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370510981549" ignored="false" />
-    <file path="/conf.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370548210279" ignored="false" />
+    <file path="/conf.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370607123574" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/ProbabilityAwareSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370511729597" ignored="false" />
     <file path="/ProbabilityAwareSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370511690836" ignored="false" />
-    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370544371092" ignored="false" />
-    <file path="$PROJECT_DIR$/../Tas4/src/common/solver/closed/AbstractClosedSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370544896261" ignored="false" />
-    <file path="/AbstractClosedSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370544894234" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370603259346" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/common/solver/closed/AbstractClosedSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370602789281" ignored="false" />
+    <file path="/AbstractClosedSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370602788890" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/factories/SolverFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370517112572" ignored="false" />
-    <file path="$PROJECT_DIR$/../Tas4/src/common/solver/logical/open/RecursiveOpenSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370512638985" ignored="false" />
-    <file path="/RecursiveOpenSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370512634947" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/common/solver/logical/open/RecursiveOpenSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606419481" ignored="false" />
+    <file path="/RecursiveOpenSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606414846" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/probabilities/ISPN_53_R_TPC_GMU_Probabilities.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370512649981" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/logical/LogicalSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514979531" ignored="false" />
     <file path="/LogicalSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514979531" ignored="false" />
-    <file path="/log4j.properties" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370544688087" ignored="false" />
+    <file path="/log4j.properties" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370603051613" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/GmuQueueCpuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514007885" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/physical/cpuNet/AbstractCpuNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514010733" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/physical/AbstractPhysicalModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370513028622" ignored="false" />
@@ -178,7 +181,7 @@
     <file path="/gmuSolver.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514933294" ignored="false" />
     <file path="/AbstractCpuNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370513952807" ignored="false" />
     <file path="/GmuQueueCpuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370513989272" ignored="false" />
-    <file path="/GmuSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370544370460" ignored="false" />
+    <file path="/GmuSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370603255938" ignored="false" />
     <file path="/queueCpuFixedNet.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370515108187" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/closed/lambda/AbstractLambdaGenerator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370518408174" ignored="false" />
     <file path="/AbstractLambdaGenerator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370518347424" ignored="false" />
@@ -192,7 +195,7 @@
     <file path="$PROJECT_DIR$/../Tas4/conf/gmu/queueCpuFixedNetGmuTas.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370517188925" ignored="false" />
     <file path="/BinaryLambdaGenerator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370517329217" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/config/SolverFactoryConfig.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370517074051" ignored="false" />
-    <file path="$PROJECT_DIR$/../Tas4/src/common/core/Tas3.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370516065950" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/common/core/Tas3.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370600684464" ignored="false" />
     <file path="/Tas3.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370516064091" ignored="false" />
     <file path="/queueCpuFixedNetGmuTas.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370516094287" ignored="false" />
     <file path="/closed.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370518042073" ignored="false" />
@@ -203,7 +206,7 @@
     <file path="/LambdaGenerator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370517506048" ignored="false" />
     <file path="/QueuingMathTools.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370518708556" ignored="false" />
     <file path="$PROJECT_DIR$/../SimpleXmlParser/src/xmlParsing/xml/XmlParsingException.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370523530086" ignored="false" />
-    <file path="$PROJECT_DIR$/../SimpleXmlParser/src/xmlParsing/xml/DXmlParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370523530086" ignored="false" />
+    <file path="$PROJECT_DIR$/../SimpleXmlParser/src/xmlParsing/xml/DXmlParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370600815765" ignored="false" />
     <file path="$PROJECT_DIR$/../SimpleXmlParser/src/xmlParsing/test/DummyOb.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370523530086" ignored="false" />
     <file path="$PROJECT_DIR$/../SimpleXmlParser/src/xmlParsing/test/DummyChild.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370523530086" ignored="false" />
     <file path="$PROJECT_DIR$/../SimpleXmlParser/src/xmlParsing/test/DummyGrandChild.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370523530086" ignored="false" />
@@ -220,6 +223,20 @@
     <file path="/GmuCpuServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370538234258" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/log/EAP.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370538958552" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/util/TasUtil.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370539332275" ignored="false" />
+    <file path="$PROJECT_DIR$/../SimpleXmlParser/.idea/workspace.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370600824237" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/common/exceptions/ClosedSolverTasException.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370601457003" ignored="false" />
+    <file path="/ClosedSolverTasException.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370601359426" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/gmu/GMUDistributionInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/CacheLoaderInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/CacheStoreInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/ClusteredCacheLoaderInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/EntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/ClusteredActivationInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
+    <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/distribution/BaseDistributionInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
+    <file path="/RecursiveGmuProbabilityGenerator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606735473" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/probabilities/RecursiveGmuProbabilityGenerator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606740024" ignored="false" />
+    <file path="/GmuValidatedScenario.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606949297" ignored="false" />
+    <file path="/GmuValidatorPrinter.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370607103982" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,33 +298,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AbstractValidator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/AbstractValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="79" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#429#451#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ispn5_2BasicValidationPrinter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="0" selection-start="5850" selection-end="5850" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GmuFixedBocceValidator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GmuFixedBocceValidator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gmu/GmuFixedBocceValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="22" selection-start="5462" selection-end="5462" vertical-scroll-proportion="0.5116279">
+            <state line="34" column="68" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-11.923077">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -315,10 +309,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="GmuValidatedScenario.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gmu/GmuValidatedScenario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="95" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GmuValidatorPrinter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gmu/GmuValidatorPrinter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="47" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conf.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf/conf.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="58" selection-start="522" selection-end="522" vertical-scroll-proportion="0.5263158">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SimpleValidatorPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
+            <state line="15" column="104" selection-start="300" selection-end="363" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -327,7 +352,7 @@
       <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="37" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+            <state line="12" column="27" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -344,10 +369,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conf.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/conf.xml">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="40" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+            <state line="25" column="86" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -371,15 +396,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidationPrinter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/printers/ValidationPrinter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="0" selection-start="2525" selection-end="2525" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -398,9 +414,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/printers/ValidationPrinter.java" />
-        <option value="$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java" />
-        <option value="$PROJECT_DIR$/src/common/Ispn5_2BasicValidationPrinter.java" />
         <option value="$PROJECT_DIR$/src/factories/ValidatorFactory.java" />
         <option value="$PROJECT_DIR$/src/gmu/GmuCsvParser.java" />
         <option value="$PROJECT_DIR$/src/gmu/GmuValidator.java" />
@@ -410,10 +423,13 @@
         <option value="$PROJECT_DIR$/conf/gmu/queueCpuFixedNetGmuTas.xml" />
         <option value="$PROJECT_DIR$/conf/gmu/closed.xml" />
         <option value="$PROJECT_DIR$/src/common/AbstractValidator.java" />
-        <option value="$PROJECT_DIR$/conf/log4j.properties" />
         <option value="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
-        <option value="$PROJECT_DIR$/conf/conf.xml" />
+        <option value="$PROJECT_DIR$/conf/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/gmu/GmuValidatedScenario.java" />
         <option value="$PROJECT_DIR$/src/gmu/GmuFixedBocceValidator.java" />
+        <option value="$PROJECT_DIR$/src/gmu/GmuValidatorPrinter.java" />
+        <option value="$PROJECT_DIR$/conf/conf.xml" />
       </list>
     </option>
   </component>
@@ -526,7 +542,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Validation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gmu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -559,7 +597,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../csvParser" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleXmlParser" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -772,34 +810,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/SimpleValidator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/FixedBocceGmu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/DummyValidator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/gmu/gmuSolver.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="21" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.5769231">
@@ -830,13 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/AbstractValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="79" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
@@ -863,14 +866,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+        <state line="12" column="27" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/conf.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+        <state line="25" column="86" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gmu/GmuValidatedScenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="95" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatedScenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="80" selection-start="198" selection-end="241" vertical-scroll-proportion="0.32894737">
           <folding />
         </state>
       </provider>
@@ -886,10 +905,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gmu/GmuFixedBocceValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="22" selection-start="5462" selection-end="5462" vertical-scroll-proportion="0.5116279">
+        <state line="34" column="68" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-11.923077">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpleValidation/SimpleValidatorPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="104" selection-start="300" selection-end="363" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gmu/GmuValidatorPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="47" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/conf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="58" selection-start="522" selection-end="522" vertical-scroll-proportion="0.5263158">
+          <folding />
         </state>
       </provider>
     </entry>
