@@ -55,4 +55,24 @@ public class GmuValidatedScenario extends ValidatedScenario<Ispn5_2CsvParser> {
    public double remoteGetR(){
       return result.remoteGetR();
    }
+
+   public double cpuUtilization(){
+      return result.cpuUtilization();
+   }
+
+   public double earlyAbortP(){
+      return result.getProbabilities().encounterTimeEarlyAbortProbability();
+   }
+
+   public double localAbortP(){
+      return result.getProbabilities().localPrepareAbortProbability();
+   }
+
+   public double remoteAbortP(){
+      return result.getProbabilities().remotePrepareAbortProbability();
+   }
+
+   public double avgR(){
+      return result.avgR();
+   }
 }

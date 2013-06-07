@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @author Diego Didona, didona@gsd.inesc-id.pt Date: 04/10/12
  */
-public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<Ispn5_2CsvParser>> extends ValidationPrinter<Ispn5_2CsvParser,V>  {
+public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<Ispn5_2CsvParser>> extends ValidationPrinter<Ispn5_2CsvParser, V> {
 
 
    public Ispn5_2BasicValidationPrinter(String outpath, List<V> validatedScenarios) {
@@ -73,8 +73,11 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put("TotalResponseTimeROXact");
       put("LocalResponseTimeWrXact");
       put("LocalResponseTimeROXact");
-      put("RGWrR");
-      put("RGROR");
+      put("LocalServiceTimeWrXact");
+      put("TotalServiceTimeWrXact");
+      put("LocalServiceTimeROXact");
+      put("RG_WrR");
+      put("RG_ROR");
       put("RG_COMMIT");
       put("BusinessLogicWrXactS");
       put("BusinessLogicROXactS");
@@ -88,6 +91,9 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put("CommitCommandResponseTime");
       put("PrepareCommandServiceTime");
       put("PrepareCommandResponseTime");
+      put("EarlyAbortProb");
+      put("PrepareLocalAbortProb");
+      put("PrepareRemoteAbortProb");
       _header();
    }
 
@@ -149,6 +155,9 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put(csvParser.totalResponseTimeROXact());
       put(csvParser.localResponseTimeWrXact());
       put(csvParser.localResponseTimeROXact());
+      put(csvParser.localServiceTimeWrXact());
+      put(csvParser.totalServiceTimeWrXact());
+      put(csvParser.localServiceTimeROXact());
       put(csvParser.RGSuxWrXactR());
       put(csvParser.RGROXactR());
       put(csvParser.RGWrCommitR());
@@ -164,6 +173,9 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put(csvParser.commitCommandResponseTime());
       put(csvParser.prepareCommandServiceTime());
       put(csvParser.prepareCommandResponseTime());
+      put(csvParser.earlyAbortProbability());
+      put(csvParser.prepareLocalAbortProbability());
+      put(csvParser.prepareRemoteAbortProbability());
       _line(validatedScenario);
    }
 

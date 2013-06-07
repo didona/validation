@@ -41,7 +41,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       //Common
       double numNodes = parser.getNumNodes();
       double writePercentage = parser.writePercentageXact();
-      double wrPerXact = parser.numWriteXact();
+      double wrPerXact = parser.putsPerWrXact();
       double threadsPerNode = parser.numThreads();
       double applicationContentionFactor = applicationContentionFactor(parser);
       double prepareMessageSize = parser.sizePrepareMsg();
@@ -51,9 +51,10 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       int firstWrite = 1;//(int) parser.numReadsBeforeFirstWrite();
       double localAccessProbability = parser.localReadProbability();
       double replicationDegree = parser.replicationDegree();
-      double localPrimaryOwnerProbability = 1 / numNodes;
+      double localPrimaryOwnerProbability = 1.0D / numNodes;
       double readsPerROXact = parser.readsPerROXact();
       double readsPerWrXact = parser.readsPerWrXact();
+      double primaryOwnerProb = 1.0D / numNodes;
 
       workload.setNumNodes(numNodes);
       workload.setWritePercentage(writePercentage);
@@ -70,6 +71,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       workload.setLocalAccessProbability(localPrimaryOwnerProbability);
       workload.setReadsPerROXact(readsPerROXact);
       workload.setReadsPerWrXact(readsPerWrXact);
+      workload.setLocalPrimaryOwnerProbability(primaryOwnerProb);
       log.trace(workload);
       return workload;
    }

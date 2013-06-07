@@ -113,6 +113,18 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return localFailures / (failed + ok);
    }
 
+   public double prepareLocalAbortProbability(){
+      double localPrepareAb = numLocalPrepareAborts();
+      double preparedXact = getAvgParam("WRITE_COUNT") + numRemotePrepareAborts() + localPrepareAb;
+      return localPrepareAb / preparedXact;
+   }
+
+   public double prepareRemoteAbortProbability(){
+      double remotePrepareAb = numRemotePrepareAborts();
+      double remotePreparedXact = getAvgParam("WRITE_COUNT") + remotePrepareAb;
+      return remotePrepareAb / remotePreparedXact;
+   }
+
    public double commitProbability() {
       double failed = getAvgParam("LOCAL_FAILURES") + getAvgParam("REMOTE_FAILURES");
       double ok = getAvgParam("WRITE_COUNT") + getAvgParam("READ_COUNT");
@@ -292,6 +304,10 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
 
    public double localServiceTimeWrXact() {
       return getAvgParam("LocalUpdateTxLocalServiceTime");
+   }
+
+   public double totalServiceTimeWrXact() {
+      return getAvgParam("LocalUpdateTxTotalCpuTime");
    }
 
    public double localServiceTimeROXact() {

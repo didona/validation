@@ -4,10 +4,16 @@
         validateUnstable="true"
         cpuUtilizationCutPoint=".95">
         <common.solver.closed.lambda.LambdaGeneratorStack timeUnit="SECONDS">
+            <common.solver.closed.lambda.RecursiveLambdaGenerator
+            minLambda="1"
+            maxIterations="50"/>
+            <common.solver.closed.lambda.BinaryLambdaGenerator
+                minLambda="1"
+                maxLambda="50000"/>
             <common.solver.closed.lambda.IterativeLambdaGenerator
                 minLambda="1"
-                maxLambda="1000"
-                stepLambda="10"/>
+                maxLambda="50000"
+                stepLambda="100"/>
          </common.solver.closed.lambda.LambdaGeneratorStack>
     </common.config.ClosedSolverConfig>
 </ispn_53.solver.GmuClosedSolver>
