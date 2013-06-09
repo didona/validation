@@ -3,9 +3,10 @@ package gmu;
 import common.AbstractValidator;
 import common.NotValidatedException;
 import common.exceptions.TasException;
+import gmu.GmuValidatedScenario;
 import ispn_53.QueueCpuFixedNetGmuTas;
 import ispn_53.input.ISPN_52_TPC_GMU_Workload;
-import ispn_53.input.physical.GmuCpuServiceTimes;
+import ispn_53.input.physical.GmuCpuServiceTimesImpl;
 import ispn_53.input.physical.GmuFixedNetServiceTimes;
 import ispn_53.input.physical.GmuQueueCpuFixedNetServiceTimes;
 import ispn_53.output.ISPN_53_D_TPC_GMU_Result;
@@ -17,22 +18,32 @@ import parser.Ispn5_2CsvParser;
  * @author diego
  * @since 4.0
  */
-public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> {
+public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> {
+
+   protected String tasConfig;
+
+   public void setTasConfig(String tasConfig) {
+      this.tasConfig = tasConfig;
+   }
 
    @Override
-   public void validate(Ispn5_2CsvParser parser) throws NotValidatedException {
+   public final void validate(Ispn5_2CsvParser parser) throws NotValidatedException {
       ISPN_52_TPC_GMU_Workload workload = buildWorkload(parser);
       GmuQueueCpuFixedNetServiceTimes serviceTimes = buildServiceTimes(parser);
-      QueueCpuFixedNetGmuTas tas = new QueueCpuFixedNetGmuTas();
+      QueueCpuFixedNetGmuTas tas;
+      if(tasConfig==null)
+       tas = new QueueCpuFixedNetGmuTas();
+      else
+         tas = new QueueCpuFixedNetGmuTas(tasConfig);
       ISPN_53_D_TPC_GMU_Result result;
       try {
-         result = tas.solve(workload,serviceTimes);
+         result = tas.solve(workload, serviceTimes);
       } catch (TasException e) {
          throw new NotValidatedException(e.getMessage());
       }
 
       log.trace("I have a stable result");
-      addValidatedScenario(new GmuValidatedScenario(parser,result));
+      addValidatedScenario(new GmuValidatedScenario(parser, result));
    }
 
 
@@ -77,12 +88,12 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
    }
 
    private GmuQueueCpuFixedNetServiceTimes buildServiceTimes(Ispn5_2CsvParser parser) {
-      GmuCpuServiceTimes cpuS = buildCpuS(parser);
+      GmuCpuServiceTimesImpl cpuS = buildCpuS(parser);
       GmuFixedNetServiceTimes netS = buildNetS(parser);
       return new GmuQueueCpuFixedNetServiceTimes(cpuS, netS);
    }
 
-   private GmuCpuServiceTimes buildCpuS(Ispn5_2CsvParser parser) {
+   protected GmuCpuServiceTimesImpl buildCpuS(Ispn5_2CsvParser parser) {
       double updateTxBusinessLogicS = parser.businessLogicWrXactS();
       double updateTxPrepareS = parser.prepareCommandServiceTime();
       double updateTxCommitS = parser.commitCommandServiceTime();
@@ -101,7 +112,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       double readOnlyTxBusinessLogicS = parser.businessLogicROXactS();
       double readOnlyTxPrepareS = 0;
       double readOnlyTxCommitS = 0;
-      GmuCpuServiceTimes cpu = new GmuCpuServiceTimes();
+      GmuCpuServiceTimesImpl cpu = new GmuCpuServiceTimesImpl();
 
       cpu.setUpdateTxBusinessLogicS(updateTxBusinessLogicS);
       cpu.setUpdateTxPrepareS(updateTxPrepareS);
@@ -132,7 +143,7 @@ public class GmuFixedBocceValidator extends AbstractValidator<Ispn5_2CsvParser> 
       net.setPrepareRtt(prepareRtt);
       net.setRemoteGetNet(remoteGetNet);
       net.setRollbackNet(rollbackNet);
-      log.trace(net) ;
+      log.trace(net);
       return net;
    }
 

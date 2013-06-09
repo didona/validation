@@ -26,6 +26,10 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put("NumWrites");
       put("NumThread");
       put("NumNodes");
+      put("WriteXactPercentage");
+      put("NumReadsPerROXact");
+      put("NumReadsPerWrXact");
+      put("NumPutsPerWrXact");
       put("Warehouses");
       put("Parallelism");
       put("CPU");
@@ -36,13 +40,9 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put("EarlyAborts");
       put("LocalPrepareAborts");
       put("RemotePrepareAborts");
-      put("WriteXactPercentage");
       put("WriteCommitProbability");
       put("TotalCommitProbability");
       put("Locality");
-      put("NumReadsPerROXact");
-      put("NumReadsPerWrXact");
-      put("NumPutsPerWrXact");
       put("NodesInCommit");
       put("RemoteNodesInCommit");
       put("RemoteReadsInROXact");
@@ -106,6 +106,11 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put(threads);
       double nodes = csvParser.getNumNodes();
       put(nodes);
+
+      put(csvParser.writePercentageXact());
+      put(csvParser.readsPerROXact());
+      put(csvParser.readsPerWrXact());
+      put(csvParser.putsPerWrXact());
       put(csvParser.numWarehouses());
       put(nodes * threads);
       put(csvParser.cpu());
@@ -118,13 +123,10 @@ public abstract class Ispn5_2BasicValidationPrinter<V extends ValidatedScenario<
       put(csvParser.numEarlyAborts());
       put(csvParser.numLocalPrepareAborts());
       put(csvParser.numRemotePrepareAborts());
-      put(csvParser.writePercentageXact());
       put(csvParser.writeXactCommitProbability());
       put(csvParser.commitProbability());
       put(csvParser.localReadProbability());
-      put(csvParser.readsPerROXact());
-      put(csvParser.readsPerWrXact());
-      put(csvParser.putsPerWrXact());
+
       put(csvParser.nodesInCommit());
       put(csvParser.remoteNodesInCommit());
       put(csvParser.remoteReadsPerROXact());

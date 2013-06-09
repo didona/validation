@@ -37,7 +37,14 @@ public class GmuValidatorPrinter extends Ispn5_2BasicValidationPrinter<GmuValida
       put("EarlyAbortP");
       put("LocalAbortP");
       put("RemoteAbortP");
-
+      put("");
+      put("LC_Cpu");
+      put("LEA_Cpu");
+      put("LLA_Cpu");
+      put("LRA_Cpu");
+      put("RC_Cpu");
+      put("RA_Cpu");
+      put("RO_Cpu");
    }
 
    @Override
@@ -58,5 +65,13 @@ public class GmuValidatorPrinter extends Ispn5_2BasicValidationPrinter<GmuValida
       put(validatedScenario.earlyAbortP());
       put(validatedScenario.localAbortP());
       put(validatedScenario.remoteAbortP());
+      put("");
+      put(validatedScenario.localUpdateU());
+      put(validatedScenario.localEarlyAbortU());
+      put(validatedScenario.localLocalAbortU());
+      put(validatedScenario.localRemoteAbortU());
+      put(validatedScenario.remoteOkU());
+      put(validatedScenario.remoteGetU());
+      put(validatedScenario.localRoU());
    }
 }

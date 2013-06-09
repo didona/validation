@@ -2,7 +2,7 @@
     timeUnit="MICROSECONDS">
     <common.config.SolverFactoryConfig
         probabilityGenerator="conf/gmu/recursiveProbabilityGenerator.xml"
-        openSolverConfig="conf/gmu/queueCpuFixedNet.xml"
+        openSolverConfig="conf/gmu/fixedCpuFixedNet.xml"
         closedSolverConfig="conf/gmu/closed.xml">
     </common.config.SolverFactoryConfig>
 </common.config.TasConfiguration>

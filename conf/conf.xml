@@ -15,5 +15,5 @@
             maxWarehouses="17"/>
     <config.FactoriesConfig
         printerClass="gmu.GmuValidatorPrinter"
-        validatorConfig="conf/FixedBocceGmu.xml"/>
+        validatorConfig="conf/GmuFixedFixed.xml"/>
 </config.ValidationConfiguration>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="4tas">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../4tas/out/artifacts/4tas_jar/4tas.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../4tas/out/artifacts/4tas_jar/4tas.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -49,6 +49,10 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return 1.0D - remoteReads / totalReads;
    }
 
+   public double numRemoteGets(){
+      return getAvgParam("NumberOfRemoteGets");
+   }
+
    public double remoteNodesInCommit() {
       return getAvgParam("AvgNumAsyncSentCommitMsgs");
    }
@@ -390,6 +394,8 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    public double remotePrepareResponseTime(){
       return getAvgParam("RemoteUpdateTxPrepareResponseTime");
    }
+
+
 
 
 }

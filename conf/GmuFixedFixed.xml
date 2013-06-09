@@ -1,0 +1,3 @@
+<gmu.GmuFixedFixedValidator
+        tasConfig="conf/gmu/fixedCpuFixedNetGmuTas.xml">
+</gmu.GmuFixedFixedValidator>

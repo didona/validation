@@ -1,8 +1,8 @@
 <config.ValidationConfiguration>
    	   <config.GlobalValidationConfig
             numThreads="1"
-            testPath="data/"
-            output="data/dummy"
+            testPath="subset/"
+            output="subset/gmu"
             minThreads="1"
             maxThreads="16"
             minNodes="2"
