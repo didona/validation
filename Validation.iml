@@ -8,7 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="4tas" level="project" />
+    <orderEntry type="library" name="Tas4" level="project" />
   </component>
 </module>
 

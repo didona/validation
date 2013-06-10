@@ -1,12 +1,12 @@
 <config.ValidationConfiguration>
    	   <config.GlobalValidationConfig
             numThreads="1"
-            testPath="subset/"
-            output="subset/gmu"
+            testPath="10/"
+            output="10/gmu2"
             minThreads="1"
             maxThreads="16"
             minNodes="2"
-            maxNodes="40"
+            maxNodes="80"
             minWrites="1"
             maxWrites="13"
             minReads="1"

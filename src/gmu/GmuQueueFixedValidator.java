@@ -62,7 +62,6 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       int firstWrite = 1;//(int) parser.numReadsBeforeFirstWrite();
       double localAccessProbability = parser.localReadProbability();
       double replicationDegree = parser.replicationDegree();
-      double localPrimaryOwnerProbability = 1.0D / numNodes;
       double readsPerROXact = parser.readsPerROXact();
       double readsPerWrXact = parser.readsPerWrXact();
       double primaryOwnerProb = 1.0D / numNodes;
@@ -79,7 +78,6 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       workload.setFirstWriteIndex(firstWrite);
       workload.setLocalAccessProbability(localAccessProbability);
       workload.setReplicationDegree(replicationDegree);
-      workload.setLocalAccessProbability(localPrimaryOwnerProbability);
       workload.setReadsPerROXact(readsPerROXact);
       workload.setReadsPerWrXact(readsPerWrXact);
       workload.setLocalPrimaryOwnerProbability(primaryOwnerProb);

@@ -41,8 +41,8 @@ public class ValidatorThread extends Thread {
          for (File csv : folder.listFiles()) {
             if (!GlobalValidator.csv(csv))
                continue;
-            //if (!processFile(csv))
-              // continue;
+            if (!processFile(csv))
+              continue;
             System.out.println(csv);
             try {
                //TODO: this is generic in the ValidationResult. This means that every Printer and Validator has to be related to a kind of parser
