@@ -46,7 +46,7 @@ public class GmuFixedFixedValidator extends GmuQueueFixedValidator {
       double updateTxRemoteCommitS = parser.remoteCommitCommandResponseTime();
       double updateTxRemoteRollbackS = parser.remoteRollbackResponseTime();
 
-      double readOnlyTxBusinessLogicS = parser.businessLogicROXactR();
+      double readOnlyTxBusinessLogicS = parser.localResponseTimeROXact();
       double readOnlyTxPrepareS = 0;
       double readOnlyTxCommitS = 0;
       GmuCpuServiceTimesImpl cpu = new GmuCpuServiceTimesImpl();

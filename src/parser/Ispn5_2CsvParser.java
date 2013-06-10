@@ -49,7 +49,7 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return 1.0D - remoteReads / totalReads;
    }
 
-   public double numRemoteGets(){
+   public double numRemoteGets() {
       return getAvgParam("NumberOfRemoteGets");
    }
 
@@ -110,6 +110,7 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    }
 
    //TODO: take the stats also at ispn level
+   /*
    public double earlyAbortProbability() {
       double localFailures = getAvgParam("LOCAL_FAILURES");
       double failed = getAvgParam("LOCAL_FAILURES") + getAvgParam("REMOTE_FAILURES");
@@ -127,6 +128,53 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       double remotePrepareAb = numRemotePrepareAborts();
       double remotePreparedXact = getAvgParam("WRITE_COUNT") + remotePrepareAb;
       return remotePrepareAb / remotePreparedXact;
+   }
+   */
+     /*
+   public double numEarlyAborts() {
+      return numAborts() - (numLocalPrepareAborts() + numRemotePrepareAborts());
+   }
+
+   public double numLocalPrepareAborts() {
+      double prepareDead = numXactToPrepare() - numWriteXact();
+      return prepareDead - numRemotePrepareAborts();
+   }
+   */
+
+   public double numRemotePrepareAborts() {
+      return getSumParam("RemotelyDeadXact");
+   }
+
+   public double numEarlyAborts() {
+      return getSumParam("NumEarlyAborts");
+   }
+
+   public double numLocalPrepareAborts() {
+      return getSumParam("NumLocalPrepareAborts");
+   }
+
+   public double earlyAbortProbability() {
+      double numEarlyAborts = numEarlyAborts();
+      double localAborts = numLocalPrepareAborts();
+      double remoteAborts = numRemotePrepareAborts();
+      double ok = numWriteXact();
+      double allWr = numEarlyAborts + localAborts + remoteAborts + ok;
+      return numEarlyAborts / allWr;
+   }
+
+   public double prepareLocalAbortProbability() {
+      double localAborts = numLocalPrepareAborts();
+      double remoteAborts = numRemotePrepareAborts();
+      double ok = numWriteXact();
+      double allWr = localAborts + remoteAborts + ok;
+      return localAborts / allWr;
+   }
+
+   public double prepareRemoteAbortProbability() {
+      double remoteAborts = numRemotePrepareAborts();
+      double ok = numWriteXact();
+      double allWr = remoteAborts + ok;
+      return remoteAborts / allWr;
    }
 
    public double commitProbability() {
@@ -222,18 +270,6 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       return getSumParam("READ_COUNT");
    }
 
-   public double numEarlyAborts() {
-      return numAborts() - (numLocalPrepareAborts() + numRemotePrepareAborts());
-   }
-
-   public double numLocalPrepareAborts() {
-      double prepareDead = numXactToPrepare() - numWriteXact();
-      return prepareDead - numRemotePrepareAborts();
-   }
-
-   public double numRemotePrepareAborts() {
-      return getSumParam("RemotelyDeadXact");
-   }
 
    public double numXactToPrepare() {
       return getSumParam("UpdateXactToPrepare");
@@ -269,6 +305,7 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    public double businessLogicROXactR() {
       double remoteGetCost = localRemoteGetResponseTime();
       double numRemoteRd = remoteReadsPerROXact();
+
       double local = localResponseTimeROXact();
       return local - remoteGetCost * numRemoteRd;
    }
@@ -365,37 +402,37 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    }
 
 
-   public double localLocalRollbackServiceTime(){
+   public double localLocalRollbackServiceTime() {
       return getAvgParam("LocalUpdateTxLocalRollbackServiceTime");
    }
 
-   public double localLocalRollbackResponseTime(){
+   public double localLocalRollbackResponseTime() {
       return getAvgParam("LocalUpdateTxLocalRollbackResponseTime");
    }
-   public double localRemoteRollbackServiceTime(){
+
+   public double localRemoteRollbackServiceTime() {
       return getAvgParam("LocalUpdateTxRemoteRollbackServiceTime");
    }
 
-   public double localRemoteRollbackResponseTime(){
+   public double localRemoteRollbackResponseTime() {
       return getAvgParam("LocalUpdateTxRemoteRollbackResponseTime");
    }
-   public double remoteRollbackServiceTime(){
+
+   public double remoteRollbackServiceTime() {
       return getAvgParam("RemoteUpdateTxRollbackServiceTime");
    }
 
-   public double remoteRollbackResponseTime(){
+   public double remoteRollbackResponseTime() {
       return getAvgParam("RemoteUpdateTxRollbackResponseTime");
    }
 
-   public double remotePrepareServiceTime(){
+   public double remotePrepareServiceTime() {
       return getAvgParam("RemoteUpdateTxPrepareServiceTime");
    }
 
-   public double remotePrepareResponseTime(){
+   public double remotePrepareResponseTime() {
       return getAvgParam("RemoteUpdateTxPrepareResponseTime");
    }
-
-
 
 
 }
