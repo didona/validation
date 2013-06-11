@@ -141,7 +141,7 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       net.setPrepareRtt(prepareRtt);
       net.setRemoteGetNet(remoteGetNet);
       net.setRollbackNet(rollbackNet);
-      log.trace(net);
+      System.out.println(net);
       return net;
    }
 

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d78c8c-03fd-4ccf-af32-090912bb95bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java" afterPath="$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" afterPath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/gmu/closed.xml" afterPath="$PROJECT_DIR$/conf/gmu/closed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java" afterPath="$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/log4j.properties" afterPath="$PROJECT_DIR$/conf/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Validation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,7 +167,7 @@
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/probabilities/ISPN_53_R_TPC_GMU_Probabilities.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370888114541" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/logical/LogicalSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514979531" ignored="false" />
     <file path="/LogicalSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370789223860" ignored="false" />
-    <file path="/log4j.properties" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370887490251" ignored="false" />
+    <file path="/log4j.properties" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370966919322" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/GmuQueueCpuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370627065313" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/physical/cpuNet/AbstractCpuNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514010733" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/physical/AbstractPhysicalModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370513028622" ignored="false" />
@@ -244,7 +241,7 @@
     <file path="/TasResult.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370634129934" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_50/output/ISPN_50_Results.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370634141852" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/GmuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370612366418" ignored="false" />
-    <file path="/GmuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370612285642" ignored="false" />
+    <file path="/GmuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960413495" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/GmuPhysicalLayer_I.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370626982781" ignored="false" />
     <file path="/GmuPhysicalLayer_I.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370727462397" ignored="false" />
     <file path="/GmuFixedNetExtendedServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370729797602" ignored="false" />
@@ -278,7 +275,7 @@
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/physical/models/GmuQueueCpuModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370727885248" ignored="false" />
     <file path="/GmuFixedNetServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370723467594" ignored="false" />
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/input/physical/GmuFixedNetServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370723469612" ignored="false" />
-    <file path="/GmuFixedCpuNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370777926127" ignored="false" />
+    <file path="/GmuFixedCpuNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960466664" ignored="false" />
     <file path="/GmuFixedCpuExtendedServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370723889358" ignored="false" />
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/physical/input/GmuFixedCpuServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370723953720" ignored="false" />
     <file path="/GmuQueueCpuFixedNetServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370729132817" ignored="false" />
@@ -299,14 +296,14 @@
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/physical/models/cpunet/GmuQueueCpuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370727941683" ignored="false" />
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/solver/GmuSolverQCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370776847259" ignored="false" />
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/solver/GmuSolverFCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370778467497" ignored="false" />
-    <file path="/GmuSolverFCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370778152693" ignored="false" />
+    <file path="/GmuSolverFCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960629011" ignored="false" />
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/solver/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370789713250" ignored="false" />
-    <file path="/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370891112431" ignored="false" />
+    <file path="/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370967538831" ignored="false" />
     <file path="/GmuSolverQCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370776842936" ignored="false" />
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/physical/input/cpunet/GmuCpuNetServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370728968233" ignored="false" />
     <file path="/GmuCpuNetServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370728966344" ignored="false" />
     <file path="/GmuFixedCpuServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370729761894" ignored="false" />
-    <file path="/GmuQueueFixedValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370870690745" ignored="false" />
+    <file path="/GmuQueueFixedValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960014493" ignored="false" />
     <file path="/GmuFixedFixedValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370885568758" ignored="false" />
     <file path="/GmuFixedFixe.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370775052138" ignored="false" />
     <file path="/fixedCpuFixedNetGmuTas.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370776460164" ignored="false" />
@@ -325,12 +322,16 @@
     <file path="/LocalTransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370807876926" ignored="false" />
     <file path="$PROJECT_DIR$/../gmu/core/src/main/java/org/infinispan/distribution/wrappers/RpcManagerWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370795213255" ignored="false" />
     <file path="$PROJECT_DIR$/../gmu/core/src/main/java/org/infinispan/stats/RemoteTransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370807916175" ignored="false" />
-    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370891130509" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370967617197" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/log/Lock.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370862740134" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/log/RAP.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370866708676" ignored="false" />
     <file path="$PROJECT_DIR$/../Ispn_5.0/core/src/main/java/org/infinispan/remoting/rpc/RpcManagerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370875751132" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/log/LAP.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370886553387" ignored="false" />
     <file path="/ISPN_53_R_TPC_GMU_Probabilities.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370888108681" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/input/physical/GmuFixedNetServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960042543" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuSolverFCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960630233" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/net/GmuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960439889" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/cpunet/GmuFixedCpuNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960480873" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,7 +414,7 @@
       <file leaf-file-name="log4j.properties" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="34" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.6924829">
+            <state line="31" column="44" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.48747152">
               <folding />
             </state>
           </provider>
@@ -469,7 +470,7 @@
       <file leaf-file-name="GmuQueueFixedValidator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="72" selection-start="6039" selection-end="6039" vertical-scroll-proportion="0.0">
+            <state line="135" column="27" selection-start="5593" selection-end="5593" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -512,11 +513,11 @@
         <option value="$PROJECT_DIR$/conf/gmu/recursiveProbabilityGenerator.xml" />
         <option value="$PROJECT_DIR$/src/gmu/GmuValidatorPrinter.java" />
         <option value="$PROJECT_DIR$/src/common/ValidatorThread.java" />
-        <option value="$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java" />
         <option value="$PROJECT_DIR$/conf/conf.xml" />
         <option value="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
         <option value="$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java" />
         <option value="$PROJECT_DIR$/conf/gmu/closed.xml" />
+        <option value="$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java" />
         <option value="$PROJECT_DIR$/conf/log4j.properties" />
       </list>
     </option>
@@ -812,7 +813,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="967" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -828,7 +829,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29295623" sideWeight="0.5785124" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4214876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4214876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821724" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -965,13 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="72" selection-start="6039" selection-end="6039" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="256" column="19" selection-start="6823" selection-end="6825" vertical-scroll-proportion="-16.807692">
@@ -1009,9 +1003,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="27" selection-start="5593" selection-end="5593" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conf/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="34" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.6924829">
+        <state line="31" column="44" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.48747152">
           <folding />
         </state>
       </provider>
