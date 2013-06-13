@@ -1,13 +1,13 @@
 <ispn_53.solver.GmuClosedSolver>
     <common.config.ClosedSolverConfig
-        convergenceThreshold=".01"
+        convergenceThreshold=".03"
         validateUnstable="true"
         cpuUtilizationCutPoint=".95">
         <common.solver.closed.lambda.LambdaGeneratorStack timeUnit="SECONDS">
             <common.solver.closed.lambda.IterativeLambdaGenerator
-                minLambda="1"
-                maxLambda="1700"
-                stepLambda="30"/>
+                minLambda="10"
+                maxLambda="1800"
+                stepLambda="25"/>
          </common.solver.closed.lambda.LambdaGeneratorStack>
     </common.config.ClosedSolverConfig>
 </ispn_53.solver.GmuClosedSolver>

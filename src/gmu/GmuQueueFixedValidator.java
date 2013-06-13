@@ -52,7 +52,7 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       //Common
       double numNodes = parser.getNumNodes();
       double writePercentage = parser.writePercentageXact();
-      double wrPerXact = parser.putsPerWrXact();
+      double wrPerXact = parser.putsPerWrXact()-4;
       double threadsPerNode = parser.numThreads();
       double applicationContentionFactor = applicationContentionFactor(parser);
       double prepareMessageSize = parser.sizePrepareMsg();

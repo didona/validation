@@ -2,100 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d78c8c-03fd-4ccf-af32-090912bb95bb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/0604.tar.bz2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_10/.~lock.infinispan4_cloudtm_10.csv#" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_10/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_10/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_10/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_10/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_10/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_10/infinispan4_cloudtm_60.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_10/infinispan4_cloudtm_70.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_50/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_50/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_50/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_50/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_50/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_50/infinispan4_cloudtm_60.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_50/infinispan4_cloudtm_70.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_90/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_90/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_90/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_90/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_90/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_100_10_90/infinispan4_cloudtm_70.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/infinispan4_cloudtm_60.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/old/infinispan4_cloudtm_10.csv.old.1370340751806.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/old/infinispan4_cloudtm_20.csv.old.1370341128339.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_10/old/infinispan4_cloudtm_30.csv.old.1370341537416.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_50/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_50/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_50/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_50/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_50/infinispan4_cloudtm_60.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_90/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_90/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_90/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_90/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_90/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_90/infinispan4_cloudtm_60.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_100000_10_10_90/infinispan4_cloudtm_70.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_10/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_10/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_10/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_10/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_10/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_10/infinispan4_cloudtm_60.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_10/infinispan4_cloudtm_70.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_50/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_50/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_50/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_50/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_50/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_50/infinispan4_cloudtm_70.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_90/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_90/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_90/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_90/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_100_10_90/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_10/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_10/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_10/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_10/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_10/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_50/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_50/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_50/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_50/infinispan4_cloudtm_40.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_50/infinispan4_cloudtm_60.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_50/infinispan4_cloudtm_70.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_90/infinispan4_cloudtm_10.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_90/infinispan4_cloudtm_20.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_90/infinispan4_cloudtm_30.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_90/infinispan4_cloudtm_50.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_90/infinispan4_cloudtm_60.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/REP0604_1_1000_10_10_90/infinispan4_cloudtm_70.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dummy.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/gmu.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/subset/gmu.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java" afterPath="$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" afterPath="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java" afterPath="$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/gmu/closed.xml" afterPath="$PROJECT_DIR$/conf/gmu/closed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/conf.xml" afterPath="$PROJECT_DIR$/conf/conf.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/log4j.properties" afterPath="$PROJECT_DIR$/conf/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Validation.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371135037789" ignored="false" />
+    <file path="/Dummy.txt" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371143641158" ignored="false" />
     <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stages/CsvReportGenerationStage.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368707161175" ignored="false" />
-    <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stressors/SyntheticPutGetStressor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371043294516" ignored="false" />
-    <file path="/SyntheticPutGetStressor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370801229768" ignored="false" />
+    <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stressors/SyntheticPutGetStressor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371146804285" ignored="false" />
+    <file path="/SyntheticPutGetStressor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371146804285" ignored="false" />
     <file path="/a.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369047803895" ignored="false" />
     <file path="$PROJECT_DIR$/../csvParser/src/StatisticsContainer.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368711800285" ignored="false" />
     <file path="$PROJECT_DIR$/../csvParser/src/exception/ParameterNotFoundException.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1368711800285" ignored="false" />
@@ -193,7 +109,7 @@
     <file path="/ExposedStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370811991581" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/stats/LockRelatedStatsHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242570014" ignored="false" />
     <file path="/LockRelatedStatsHelper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242528259" ignored="false" />
-    <file path="$PROJECT_DIR$/../pedroGun/plugins/infinispan4/src/main/java/org/radargun/cachewrappers/InfinispanWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371055085610" ignored="false" />
+    <file path="$PROJECT_DIR$/../pedroGun/plugins/infinispan4/src/main/java/org/radargun/cachewrappers/InfinispanWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371143912002" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/gmu/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370606401304" ignored="false" />
     <file path="/GMUEntryWrappingInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369242026526" ignored="false" />
     <file path="/SimpleValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1369235105862" ignored="false" />
@@ -240,7 +156,7 @@
     <file path="/GmuCsvParser.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370455813062" ignored="false" />
     <file path="/GmuFixedBocceValidator.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370626795198" ignored="false" />
     <file path="/FixedBocceGmu.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370775016151" ignored="false" />
-    <file path="/conf.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371133461547" ignored="false" />
+    <file path="/conf.xml" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371142206949" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/ProbabilityAwareSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370511729597" ignored="false" />
     <file path="/ProbabilityAwareSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370511690836" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370634334999" ignored="false" />
@@ -252,7 +168,7 @@
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/probabilities/ISPN_53_R_TPC_GMU_Probabilities.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370888114541" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/logical/LogicalSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514979531" ignored="false" />
     <file path="/LogicalSolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370789223860" ignored="false" />
-    <file path="/log4j.properties" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371131723972" ignored="false" />
+    <file path="/log4j.properties" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371142491190" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/GmuQueueCpuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370627065313" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/physical/cpuNet/AbstractCpuNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370514010733" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/common/solver/physical/AbstractPhysicalModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370513028622" ignored="false" />
@@ -383,7 +299,7 @@
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/solver/GmuSolverFCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370778467497" ignored="false" />
     <file path="/GmuSolverFCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960629011" ignored="false" />
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/solver/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370789713250" ignored="false" />
-    <file path="/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371133914709" ignored="false" />
+    <file path="/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371142412527" ignored="false" />
     <file path="/GmuSolverQCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370776842936" ignored="false" />
     <file path="$PROJECT_DIR$/../4tas/src/ispn_53/physical/input/cpunet/GmuCpuNetServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370728968233" ignored="false" />
     <file path="/GmuCpuNetServiceTimes.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370728966344" ignored="false" />
@@ -407,7 +323,7 @@
     <file path="/LocalTransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370807876926" ignored="false" />
     <file path="$PROJECT_DIR$/../gmu/core/src/main/java/org/infinispan/distribution/wrappers/RpcManagerWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370795213255" ignored="false" />
     <file path="$PROJECT_DIR$/../gmu/core/src/main/java/org/infinispan/stats/RemoteTransactionStatistics.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370807916175" ignored="false" />
-    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371134618610" ignored="false" />
+    <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuRoASolver.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371142432082" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/log/Lock.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370862740134" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/log/RAP.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370866708676" ignored="false" />
     <file path="$PROJECT_DIR$/../Ispn_5.0/core/src/main/java/org/infinispan/remoting/rpc/RpcManagerImpl.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370875751132" ignored="false" />
@@ -417,11 +333,17 @@
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/solver/GmuSolverFCFN.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960630233" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/net/GmuFixedNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960439889" ignored="false" />
     <file path="$PROJECT_DIR$/../Tas4/src/ispn_53/physical/models/cpunet/GmuFixedCpuNetModel.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1370960480873" ignored="false" />
-    <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stages/synthetic/SyntheticXactFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371056264337" ignored="false" />
-    <file path="/SyntheticXactFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371056218523" ignored="false" />
+    <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stages/synthetic/SyntheticXactFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371145802077" ignored="false" />
+    <file path="/SyntheticXactFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371145801400" ignored="false" />
     <file path="$PROJECT_DIR$/../gmuV3/core/src/main/java/org/infinispan/interceptors/distribution/TxDistributionInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371061551661" ignored="false" />
     <file path="/TxDistributionInterceptor.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371053580004" ignored="false" />
     <file path="/InfinispanWrapper.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371055043418" ignored="false" />
+    <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stages/synthetic/SyntheticDistinctXactFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371152692277" ignored="false" />
+    <file path="/SyntheticDistinctXactFactory.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371152692277" ignored="false" />
+    <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stages/synthetic/SyntheticXactParams.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371146815825" ignored="false" />
+    <file path="/SyntheticXactParams.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371145355849" ignored="false" />
+    <file path="$PROJECT_DIR$/../pedroGun/framework/src/main/java/org/radargun/stages/SyntheticBenchmarkStage.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371146752825" ignored="false" />
+    <file path="/SyntheticBenchmarkStage.java" changelist="89d78c8c-03fd-4ccf-af32-090912bb95bb" time="1371146750441" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -504,7 +426,7 @@
       <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="39" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
+            <state line="23" column="63" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -539,19 +461,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GmuQueueFixedValidator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GmuQueueFixedValidator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.33257404">
+            <state line="41" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="closed.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="closed.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf/gmu/closed.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
+            <state line="13" column="24" selection-start="553" selection-end="553" vertical-scroll-proportion="0.44419134">
               <folding />
             </state>
           </provider>
@@ -560,7 +482,7 @@
       <file leaf-file-name="GmuFixedFixedValidator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="24" selection-start="3285" selection-end="3285" vertical-scroll-proportion="0.0">
+            <state line="30" column="54" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -594,12 +516,12 @@
         <option value="$PROJECT_DIR$/conf/gmu/recursiveProbabilityGenerator.xml" />
         <option value="$PROJECT_DIR$/src/gmu/GmuValidatorPrinter.java" />
         <option value="$PROJECT_DIR$/src/common/ValidatorThread.java" />
-        <option value="$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java" />
         <option value="$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java" />
-        <option value="$PROJECT_DIR$/conf/log4j.properties" />
-        <option value="$PROJECT_DIR$/conf/conf.xml" />
-        <option value="$PROJECT_DIR$/conf/gmu/closed.xml" />
         <option value="$PROJECT_DIR$/src/parser/Ispn5_2CsvParser.java" />
+        <option value="$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java" />
+        <option value="$PROJECT_DIR$/conf/conf.xml" />
+        <option value="$PROJECT_DIR$/conf/log4j.properties" />
+        <option value="$PROJECT_DIR$/conf/gmu/closed.xml" />
       </list>
     </option>
   </component>
@@ -911,7 +833,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="967" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="967" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1058,20 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="24" selection-start="3285" selection-end="3285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="39" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Tas4/out/artifacts/Tas4_jar/Tas4.jar!/ispn_53/solver/GmuRoASolver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="0" selection-start="8585" selection-end="8585" vertical-scroll-proportion="0.8379052">
@@ -1079,23 +987,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Tas4/out/artifacts/Tas4_jar/Tas4.jar!/common/solver/closed/AbstractClosedSolver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="163" selection-end="163" vertical-scroll-proportion="0.14962594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/gmu/closed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1109,9 +1003,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gmu/GmuFixedFixedValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="54" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/conf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gmu/GmuQueueFixedValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.33257404">
+        <state line="41" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="63" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/gmu/closed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="553" selection-end="553" vertical-scroll-proportion="0.44419134">
           <folding />
         </state>
       </provider>
