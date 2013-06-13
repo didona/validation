@@ -110,7 +110,8 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    }
 
    //TODO: take the stats also at ispn level
-   /*
+   //OLD_FROM
+  /*
    public double earlyAbortProbability() {
       double localFailures = getAvgParam("LOCAL_FAILURES");
       double failed = getAvgParam("LOCAL_FAILURES") + getAvgParam("REMOTE_FAILURES");
@@ -129,8 +130,8 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       double remotePreparedXact = getAvgParam("WRITE_COUNT") + remotePrepareAb;
       return remotePrepareAb / remotePreparedXact;
    }
-   */
-     /*
+
+
    public double numEarlyAborts() {
       return numAborts() - (numLocalPrepareAborts() + numRemotePrepareAborts());
    }
@@ -139,12 +140,13 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       double prepareDead = numXactToPrepare() - numWriteXact();
       return prepareDead - numRemotePrepareAborts();
    }
-   */
 
+   //OLD_TO
+   */
    public double numRemotePrepareAborts() {
       return getSumParam("RemotelyDeadXact");
    }
-
+   // NEW_FROM
    public double numEarlyAborts() {
       return getSumParam("NumEarlyAborts");
    }
@@ -176,6 +178,8 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
       double allWr = remoteAborts + ok;
       return remoteAborts / allWr;
    }
+   //NEW_TO
+
 
    public double commitProbability() {
       double failed = getAvgParam("LOCAL_FAILURES") + getAvgParam("REMOTE_FAILURES");
@@ -198,7 +202,7 @@ public class Ispn5_2CsvParser extends RadargunCsvParser {
    }
 
    public double writePercentageXact() {
-      return getAvgParam("PercentageWriteTransactions");
+      return getAvgParam("PercentageSuccessWriteTransactions");
    }
 
    public double readsPerROXact() {

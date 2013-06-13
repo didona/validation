@@ -66,7 +66,7 @@ public class GmuFixedFixedValidator extends GmuQueueFixedValidator {
       cpu.setReadOnlyTxBusinessLogicS(readOnlyTxBusinessLogicS);
       cpu.setReadOnlyTxPrepareS(readOnlyTxPrepareS);
       cpu.setReadOnlyTxCommitS(readOnlyTxCommitS);
-      log.trace(cpu);
+      System.out.println(cpu);
       return cpu;
    }
 
