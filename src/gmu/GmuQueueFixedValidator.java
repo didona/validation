@@ -52,7 +52,7 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       //Common
       double numNodes = parser.getNumNodes();
       double writePercentage = parser.writePercentageXact();
-      double wrPerXact = parser.putsPerWrXact()-4;
+      double wrPerXact = parser.putsPerWrXact();
       double threadsPerNode = parser.numThreads();
       double applicationContentionFactor = applicationContentionFactor(parser);
       double prepareMessageSize = parser.sizePrepareMsg();
@@ -81,7 +81,7 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       workload.setReadsPerROXact(readsPerROXact);
       workload.setReadsPerWrXact(readsPerWrXact);
       workload.setLocalPrimaryOwnerProbability(primaryOwnerProb);
-      log.trace(workload);
+      System.out.println(workload);
       return workload;
    }
 
