@@ -119,5 +119,20 @@ public class GmuValidatedScenario extends ValidatedScenario<Ispn5_2CsvParser> {
       return remoteGetLambda * remoteGetS;
    }
 
+   public double localSuxHoldTime() {
+      return result.localSuccessfulHoldTime();
+   }
+
+   public double remoteSuccessfulHoldTime() {
+      return result.remoteSuccessfulHoldTime();
+   }
+
+   public double localAbortedHoldTime() {
+      return result.localRemoteAbortedHoldTime();
+   }
+
+   public double remoteAbortedHoldTime() {
+      return result.remoteAbortedHoldTime();
+   }
 
 }

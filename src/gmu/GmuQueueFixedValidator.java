@@ -20,7 +20,8 @@ import parser.Ispn5_2CsvParser;
  */
 public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> {
 
-   protected String tasConfig;
+   protected String tasConfig = null;
+   private boolean open = true;
 
    public void setTasConfig(String tasConfig) {
       this.tasConfig = tasConfig;
@@ -31,6 +32,8 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       ISPN_52_TPC_GMU_Workload workload = buildWorkload(parser);
       GmuQueueCpuFixedNetServiceTimes serviceTimes = buildServiceTimes(parser);
       QueueCpuFixedNetGmuTas tas;
+      if(open)
+         this.setTasConfig("conf/gmu/open/openFixed.xml");
       if(tasConfig==null)
        tas = new QueueCpuFixedNetGmuTas();
       else
@@ -58,6 +61,10 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       double prepareMessageSize = parser.sizePrepareMsg();
       double mem = parser.mem();
       double numCores = 1;
+      double lambda = 0;
+      if(tasConfig!=null)
+          lambda = (parser.readThroughput()+parser.writeThroughput())*1e-6;
+
       //Gmu-specific
       int firstWrite = 1;//(int) parser.numReadsBeforeFirstWrite();
       double localAccessProbability = parser.localReadProbability();
@@ -65,6 +72,8 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       double readsPerROXact = parser.readsPerROXact();
       double readsPerWrXact = parser.readsPerWrXact();
       double primaryOwnerProb = 1.0D / numNodes;
+      double localCommitW = parser.localCommitWaitTime();
+      double remoteCommitW = parser.remoteCommitWaitTime();
 
       workload.setNumNodes(numNodes);
       workload.setWritePercentage(writePercentage);
@@ -74,6 +83,7 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       workload.setPrepareMessageSize(prepareMessageSize);
       workload.setMem(mem);
       workload.setNumCores(numCores);
+      workload.setLambda(lambda);
 
       workload.setFirstWriteIndex(firstWrite);
       workload.setLocalAccessProbability(localAccessProbability);
@@ -81,6 +91,8 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       workload.setReadsPerROXact(readsPerROXact);
       workload.setReadsPerWrXact(readsPerWrXact);
       workload.setLocalPrimaryOwnerProbability(primaryOwnerProb);
+      workload.setLocalCommitQueueWaitingTime(localCommitW);
+      workload.setRemoteCommitQueueWaitingTime(remoteCommitW);
       System.out.println(workload);
       return workload;
    }

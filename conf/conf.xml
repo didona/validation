@@ -1,8 +1,8 @@
 <config.ValidationConfiguration>
    	   <config.GlobalValidationConfig
             numThreads="1"
-            testPath="_rep/"
-            output="_rep/gmu2"
+            testPath="0616/"
+            output="0616/gmu2"
             minThreads="1"
             maxThreads="16"
             minNodes="30"
@@ -10,7 +10,7 @@
             minWrites="1"
             maxWrites="13"
             minReads="1"
-            maxReads="5343000"
+            maxReads="100000"
             minWarehouses="17"
             maxWarehouses="17"/>
     <config.FactoriesConfig

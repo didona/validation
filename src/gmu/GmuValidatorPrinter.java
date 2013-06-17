@@ -45,6 +45,10 @@ public class GmuValidatorPrinter extends Ispn5_2BasicValidationPrinter<GmuValida
       put("RC_Cpu");
       put("RA_Cpu");
       put("RO_Cpu");
+      put("LocalSuxHT");
+      put("LocalAbHT");
+      put("RemoteSuxHT");
+      put("RemoteAbHT");
    }
 
    @Override
@@ -73,5 +77,9 @@ public class GmuValidatorPrinter extends Ispn5_2BasicValidationPrinter<GmuValida
       put(validatedScenario.remoteOkU());
       put(validatedScenario.remoteGetU());
       put(validatedScenario.localRoU());
+      put(validatedScenario.localSuxHoldTime());
+      put(validatedScenario.localAbortedHoldTime());
+      put(validatedScenario.remoteSuccessfulHoldTime());
+      put(validatedScenario.remoteAbortedHoldTime());
    }
 }
