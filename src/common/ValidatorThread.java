@@ -90,12 +90,15 @@ public class ValidatorThread extends Thread {
       double maxW = globalValidationConfig.getMaxWrites();
       double minR = globalValidationConfig.getMinReads();
       double maxR = globalValidationConfig.getMaxReads();
+      double maxD = globalValidationConfig.getMaxReplicationDegree();
+      double miND = globalValidationConfig.getMinReplicationDegree();
       try {
          RadargunCsvParser parser = new RadargunCsvParser(f.getPath());
          boolean ok = in(parser.getNumNodes(), minN, maxN) &&
                in(parser.getAvgParam("AvgPutsPerWrTransaction"), minW, maxW)
                && in(parser.getAvgParam("NUM_THREADS"), minT, maxT)
-               && in(parser.getAvgParam("NUM_KEYS"), minR, maxR);
+               && in(parser.getAvgParam("NUM_KEYS"), minR, maxR)
+               && in(parser.getAvgParam("ReplicationDegree"),miND,maxD);
          if (parser.isParam("NUM_WHAREHOUSES")) {
             minW = globalValidationConfig.getMinWarehouses();
             maxW = globalValidationConfig.getMaxWarehouses();

@@ -13,6 +13,8 @@ import common.ValidatedScenario;
 public class DummyValidator extends AbstractValidator<RadargunCsvParser> {
 
 
+
+
    @Override
    public void validate(RadargunCsvParser parser) throws NotValidatedException {
       addValidatedScenario(new ValidatedScenario<RadargunCsvParser>(parser));

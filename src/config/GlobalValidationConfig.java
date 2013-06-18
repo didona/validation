@@ -27,6 +27,25 @@ public class GlobalValidationConfig {
    private double maxPayment;
 
 
+   private double minReplicationDegree;
+   private double maxReplicationDegree;
+
+   public double getMinReplicationDegree() {
+      return minReplicationDegree;
+   }
+
+   public void setMinReplicationDegree(double minReplicationDegree) {
+      this.minReplicationDegree = minReplicationDegree;
+   }
+
+   public double getMaxReplicationDegree() {
+      return maxReplicationDegree;
+   }
+
+   public void setMaxReplicationDegree(double maxReplicationDegree) {
+      this.maxReplicationDegree = maxReplicationDegree;
+   }
+
    public double getMinWarehouses() {
       return minWarehouses;
    }

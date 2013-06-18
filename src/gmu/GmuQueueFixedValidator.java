@@ -42,7 +42,7 @@ public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> 
       try {
          result = tas.solve(workload, serviceTimes);
       } catch (TasException e) {
-         throw new NotValidatedException(e.getMessage());
+         throw new NotValidatedException(e.getMessage()+"   "+e.getCause());
       }
 
       log.trace("I have a stable result");

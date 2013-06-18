@@ -12,7 +12,9 @@
             minReads="1"
             maxReads="100000"
             minWarehouses="17"
-            maxWarehouses="17"/>
+            maxWarehouses="17"
+            minReplicationDegree="1"
+            maxReplicationDegree="1"/>
     <config.FactoriesConfig
         printerClass="gmu.GmuValidatorPrinter"
         validatorConfig="conf/GmuFixedFixed.xml"/>
