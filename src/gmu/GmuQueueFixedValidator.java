@@ -21,7 +21,7 @@ import parser.Ispn5_2CsvParser;
 public class GmuQueueFixedValidator extends AbstractValidator<Ispn5_2CsvParser> {
 
    protected String tasConfig = null;
-   private boolean open = true;
+   private boolean open = false;
 
    public void setTasConfig(String tasConfig) {
       this.tasConfig = tasConfig;

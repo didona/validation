@@ -25,13 +25,16 @@ import ispn_53.input.physical.GmuCpuServiceTimesImpl;
 import parser.Ispn5_2CsvParser;
 
 /**
- * @author Diego Didona, didona@gsd.inesc-id.pt
- *         Date: 09/06/13
+ * @author Diego Didona, didona@gsd.inesc-id.pt Date: 09/06/13
  */
 public class GmuFixedFixedValidator extends GmuQueueFixedValidator {
 
    protected GmuCpuServiceTimesImpl buildCpuS(Ispn5_2CsvParser parser) {
       double updateTxBusinessLogicS = parser.businessLogicWrXactR();
+      if (updateTxBusinessLogicS < 0) {
+         System.out.println("UpdateTxBusinessLogic<0! Setting 1");
+         updateTxBusinessLogicS = 1;
+      }
       double updateTxPrepareS = parser.prepareCommandResponseTime();
       double updateTxCommitS = parser.commitCommandResponseTime();
       double updateTxLocalLocalRollbackS = parser.localLocalRollbackResponseTime();
@@ -47,6 +50,10 @@ public class GmuFixedFixedValidator extends GmuQueueFixedValidator {
       double updateTxRemoteRollbackS = parser.remoteRollbackResponseTime();
 
       double readOnlyTxBusinessLogicS = parser.localResponseTimeROXact();
+      if (readOnlyTxBusinessLogicS < 0) {
+         System.out.println("ReadOnlyTxBusinessLogic<0! Setting 1");
+         readOnlyTxBusinessLogicS = 1;
+      }
       double readOnlyTxPrepareS = 0;
       double readOnlyTxCommitS = 0;
       GmuCpuServiceTimesImpl cpu = new GmuCpuServiceTimesImpl();
